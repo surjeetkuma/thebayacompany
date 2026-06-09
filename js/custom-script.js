@@ -8,7 +8,33 @@ window.addEventListener('scroll', function () {
         header.classList.remove('scrolled');
     }
 });
+const navCollapse = document.getElementById('mainNav');
+const toggler = document.querySelector('.navbar-toggler .menu-icon');
 
+navCollapse.addEventListener('show.bs.collapse', function () {
+    toggler.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round"
+             stroke-linejoin="round">
+            <path d="M18 6 6 18"></path>
+            <path d="M6 6 18 18"></path>
+        </svg>
+    `;
+});
+
+navCollapse.addEventListener('hide.bs.collapse', function () {
+    toggler.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round"
+             stroke-linejoin="round">
+            <path d="M4 5h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 19h16"></path>
+        </svg>
+    `;
+});
 //////header js///////
 
 /////fade up animation///////

@@ -208,6 +208,11 @@ font-family: Cormorant Garamond, serif;
 	font-size: .6rem;
 }
 
+#mainHeader .navbar-toggler{
+	color:#ffffff;
+}
+
+
 .navbar-nav .nav-item .nav-link {
 	color: color-mix(in oklab, var(--foreground) 85%, transparent);
 	font-weight: 500;
@@ -227,7 +232,7 @@ font-family: Cormorant Garamond, serif;
 	font-weight: 400;
 }
 
-.btn.header-btn {
+.header-btn {
 	color: var(--gold-foreground);
 	letter-spacing: .028rem;
 	font-size: .75rem;
@@ -238,6 +243,14 @@ font-family: Cormorant Garamond, serif;
 	text-transform: capitalize;
 	border-radius: 7px;
 	border: none;
+}
+.header-btn:hover{
+	color: var(--gold-foreground);
+    background-color: var(--gold);
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: 0 0 17px 0px #e1ad573b;
+    filter: brightness(110%);
 }
 
 #mainHeader{

@@ -17,9 +17,9 @@
 #mainNav .navbar-nav {
     gap: 5px;
 }
-#mainNav .navbar-nav .header-btn{
-  margin-top: 18px;
+#mainNav  .header-btn{
     width: 100%;
+    margin-top:15px;
 }
     .hero-title{
         font-size: 4.5rem;
