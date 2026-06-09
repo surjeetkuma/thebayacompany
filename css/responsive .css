@@ -19,7 +19,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
-    .custome-flex.gx-6 {
+    .custome-flex {
         flex-direction: column;
     }
 
