@@ -62,7 +62,7 @@
 }
 
 .gx-6 {
-	--bs-gutter-x: calc(var(--spacing) * 19);
+	--bs-gutter-x: calc(var(--spacing) * 20);
 }
 .gap-6 {
     gap: calc(var(--spacing) * 6);}
@@ -504,6 +504,7 @@ transform: translateY(0px);
     display: flex;
     align-content: center;
     align-items: center;
+	gap: 66px;
 }
 .custome-flex-col {
     flex: 1;
