@@ -62,7 +62,7 @@
 }
 
 .gx-6 {
-	--bs-gutter-x: calc(var(--spacing) * 20);
+	--bs-gutter-x: calc(var(--spacing) * 19);
 }
 .gap-6 {
     gap: calc(var(--spacing) * 6);}
@@ -500,9 +500,8 @@ transform: translateY(0px);
 	font-size: 12px;
 	line-height: 1.2;
 }
-.custome-flex.gx-6 {
+.custome-flex{
     display: flex;
-    gap: calc(var(--spacing) * 19);
     align-content: center;
     align-items: center;
 }
