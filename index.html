@@ -1,1966 +1,1356 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Hero</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-face.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive .css">
-</head>
-
-<body>
+  </head>
+  <body>
     <!-- enquiryModal -->
-<div class="modal fade" id="enquiryModal" tabindex="-1" style="background-color: 
+    <div class="modal fade" id="enquiryModal" tabindex="-1" style="background-color: 
 color-mix(in oklab, #000 80%, transparent);">
-    <div class="modal-dialog modal-dialog-centered modal-box-width">
+      <div class="modal-dialog modal-dialog-centered modal-box-width">
         <div class="modal-content glass-gold enquiry-modal">
-
-            <button type="button" class="btn-close-custom"
-                data-bs-dismiss="modal">
-                ✕
-            </button>
-
-            <div class="enquiry-modal-body">
-
-                <span class="eyebrow">The Baya — Mankhurd</span>
-
-                <h2 class="modal-title-custom font-display my-3">
-                    Enquire Now
-                </h2>
-
-                <p class="modal-desc">
-                    Share your details and our team will get in touch within 24 hours.
-                </p>
-
-                <form id="form-modal" class="form-modal-form mt-4">
-
-                    <!-- Name -->
-                    <div class="position-relative mb-3">
-<span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg"
-         width="20"
-         height="19"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-        <circle cx="12" cy="7" r="4"></circle>
-    </svg>
-</span>
-                        <input type="text"
-                            class="custom-input"
-                            placeholder="Full Name"
-                            required>
-                    </div>
-
-                    <!-- Phone -->
-                    <div class="position-relative mb-3">
-
-   <span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-</span>
-                        <input type="tel"
-                            class="form-control custom-input"
-                            placeholder="Phone Number"
-                            required>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="position-relative mb-4">
-
-   <span class="input-icon-form text-gold">
-   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-</span>
-                        <input type="email"
-                            class="form-control custom-input"
-                            placeholder="Email Address"
-                            required>
-                    </div>
-
-                    <button type="submit"
-                        class="btn btn-gold-modal w-100">
-                        Submit Enquiry
-                    </button>
-
-                </form>
-
-            </div>
-
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal"> ✕ </button>
+          <div class="enquiry-modal-body">
+            <span class="eyebrow">The Baya — Mankhurd</span>
+            <h2 class="modal-title-custom font-display my-3"> Enquire Now </h2>
+            <p class="modal-desc"> Share your details and our team will get in touch within 24 hours. </p>
+            <form id="form-modal" class="form-modal-form mt-4">
+              <!-- Name -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </span>
+                <input type="text" class="custom-input" placeholder="Full Name" required>
+              </div>
+              <!-- Phone -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true">
+                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                  </svg>
+                </span>
+                <input type="tel" class="form-control custom-input" placeholder="Phone Number" required>
+              </div>
+              <!-- Email -->
+              <div class="position-relative mb-4">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true">
+                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  </svg>
+                </span>
+                <input type="email" class="form-control custom-input" placeholder="Email Address" required>
+              </div>
+              <button type="submit" class="btn btn-gold-modal w-100"> Submit Enquiry </button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
     <!-- enquiryModal -->
-
-
     <header id="mainHeader" class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <!-- Logo -->
-                <a class="navbar-brand d-flex flex-column lh-1 logo" href="#top"> <span class="logo-text">THE
-                        BAYA</span> <small class="logo-text-small text-uppercase text-gold">
-                        MANKHURD
-                    </small> </a>
-                <!-- Mobile Right Side -->
-                <div class="d-flex d-lg-none align-items-center gap-2"> <button class="btn header-btn" data-bs-toggle="modal" data-bs-target="#enquiryModal">
-                        Enquire Now
-                    </button>
-                    <button class="navbar-toggler border-0 shadow-none" type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNav"
-        aria-expanded="false">
-
-    <span class="menu-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-             viewBox="0 0 24 24" fill="none" stroke="currentColor"
-             stroke-width="2" stroke-linecap="round"
-             stroke-linejoin="round">
-            <path d="M4 5h16"></path>
-            <path d="M4 12h16"></path>
-            <path d="M4 19h16"></path>
-        </svg>
-    </span>
-
-</button>
-                </div>
-                <!-- Menu -->
-                <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-                    <ul class="navbar-nav align-items-lg-center gap-lg-3 me-lg-4">
-                        <li class="nav-item"> <a class="nav-link" href="#about">Overview</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#amenities">Amenities</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#gallery">Gallery</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#floor-plans">Floor Plans</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#location">Location</a> </li>
-                    </ul>
-                    <!-- Desktop Button --><button class="btn header-btn" data-bs-toggle="modal" data-bs-target="#enquiryModal">
-                        Enquire Now
-                    </button>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex flex-column lh-1 logo" href="#top">
+            <span class="logo-text">THE BAYA</span>
+            <small class="logo-text-small text-uppercase text-gold"> MANKHURD </small>
+          </a>
+          <!-- Mobile Right Side -->
+          <div class="d-flex d-lg-none align-items-center gap-2">
+            <button class="btn header-btn" data-bs-toggle="modal" data-bs-target="#enquiryModal"> Enquire Now </button>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-expanded="false">
+              <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 5h16"></path>
+                  <path d="M4 12h16"></path>
+                  <path d="M4 19h16"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <!-- Menu -->
+          <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+            <ul class="navbar-nav align-items-lg-center gap-lg-3 me-lg-4">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#amenities">Amenities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#floor-plans">Floor Plans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#location">Location</a>
+              </li>
+            </ul>
+            <!-- Desktop Button -->
+            <button class="btn header-btn" data-bs-toggle="modal" data-bs-target="#enquiryModal"> Enquire Now </button>
+          </div>
+        </div>
+      </nav>
     </header>
     <section id="top" class="position-relative h-100 vh-100 w-100 overflow-hidden bg-black">
-         <img
-            src="images/hero-tower.jpg" alt="The Baya Mankhurd luxury residential tower at dusk" width="1920"
-            height="1080" class="position-absolute top-0 start-0 w-100 h-100 object-cover hero-image">
-        <div class="position-absolute top-0 start-0 w-100 h-100 hero-overlay"></div>
-        <div class="particles"> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-            <span></span> <span></span> </div>
-        <div
-            class="container-luxe position-relative z-3 d-flex flex-column align-items-center justify-content-center h-100 py-5 text-center hero-content ">
-            <span class="eyebrow mb-3 fade-up">A New Landmark in Mumbai's East</span>
-            <h1 class="max-w-4xl hero-title  text-center">
-                <span class="d-inline-block  me-1 fade-up" data-delay="200">Luxury</span>
-                <span class="d-inline-block me-1 fade-up" data-delay="200">Living</span>
-                <span class="d-inline-block me-1">
-                    <span class="text-gradient-gold fst-italic fade-up" data-delay="300">Reimagined</span>
-                </span>
-                <span class="d-inline-block me-1 fade-up" data-delay="400">at</span>
-                <span class="d-inline-block fade-up" data-delay="400">Mankhurd</span>
-            </h1>
-            <p class="hero-description max-w-2xl fade-up"> Discover thoughtfully crafted residences designed for modern
-                families with world-class amenities, seamless connectivity, and elevated urban living. </p>
-            <div class="mt-4 d-flex flex-column flex-md-row gap-3 justify-content-center fade-up" data-delay="500">
-                <button type="button" class="btn btn-gold d-inline-flex align-items-center justify-content-center gap-2 " data-bs-toggle="modal" data-bs-target="#DownloadBrochure">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-file-down" aria-hidden="true">
-                        <path
-                            d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z">
-                        </path>
-                        <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
-                        <path d="M12 18v-6"></path>
-                        <path d="m9 15 3 3 3-3"></path>
-                    </svg> Download Brochure </button>
-                <button type="button" class="btn btn-outline-gold d-inline-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#SiteVisit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-calendar-check" aria-hidden="true">
-                        <path d="M8 2v4"></path>
-                        <path d="M16 2v4"></path>
-                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                        <path d="M3 10h18"></path>
-                        <path d="m9 16 2 2 4-4"></path>
-                    </svg> Schedule Site Visit </button>
-            </div>
+      <img src="images/hero-tower.jpg" alt="The Baya Mankhurd luxury residential tower at dusk" width="1920" height="1080" class="position-absolute top-0 start-0 w-100 h-100 object-cover hero-image">
+      <div class="position-absolute top-0 start-0 w-100 h-100 hero-overlay"></div>
+      <div class="particles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="container-luxe position-relative z-3 d-flex flex-column align-items-center justify-content-center h-100 py-5 text-center hero-content ">
+        <span class="eyebrow mb-3 fade-up">A New Landmark in Mumbai's East</span>
+        <h1 class="max-w-4xl hero-title  text-center">
+          <span class="d-inline-block  me-1 fade-up" data-delay="200">Luxury</span>
+          <span class="d-inline-block me-1 fade-up" data-delay="200">Living</span>
+          <span class="d-inline-block me-1">
+            <span class="text-gradient-gold fst-italic fade-up" data-delay="300">Reimagined</span>
+          </span>
+          <span class="d-inline-block me-1 fade-up" data-delay="400">at</span>
+          <span class="d-inline-block fade-up" data-delay="400">Mankhurd</span>
+        </h1>
+        <p class="hero-description max-w-2xl fade-up"> Discover thoughtfully crafted residences designed for modern families with world-class amenities, seamless connectivity, and elevated urban living. </p>
+        <div class="mt-4 d-flex flex-column flex-md-row gap-3 justify-content-center fade-up" data-delay="500">
+          <button type="button" class="btn btn-gold d-inline-flex align-items-center justify-content-center gap-2 " data-bs-toggle="modal" data-bs-target="#DownloadBrochure">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-down" aria-hidden="true">
+              <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
+              <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+              <path d="M12 18v-6"></path>
+              <path d="m9 15 3 3 3-3"></path>
+            </svg> Download Brochure </button>
+          <button type="button" class="btn btn-outline-gold d-inline-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#SiteVisit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-check" aria-hidden="true">
+              <path d="M8 2v4"></path>
+              <path d="M16 2v4"></path>
+              <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+              <path d="M3 10h18"></path>
+              <path d="m9 16 2 2 4-4"></path>
+            </svg> Schedule Site Visit </button>
         </div>
-        <div class="position-absolute bottom-0 start-50 translate-middle-x z-3  mb-4" style="color: var(--gold);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-chevron-down animate-scroll-bob size-6" aria-hidden="true">
-                <path d="m6 9 6 6 6-6"></path>
-            </svg>
-        </div>
+      </div>
+      <div class="position-absolute bottom-0 start-50 translate-middle-x z-3  mb-4" style="color: var(--gold);">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down animate-scroll-bob size-6" aria-hidden="true">
+          <path d="m6 9 6 6 6-6"></path>
+        </svg>
+      </div>
     </section>
     <section class="section-pad relative">
-        <div class="container-luxe">
-            <div class="d-flex flex-column gap-4 align-items-center text-center fade-up"> <span class="eyebrow">The Baya
-                    Company</span>
-                <h2 class="display-4 fw-medium text-center max-w-3xl h2-font">
-                    Built on Trust. Designed for Generations.
-                </h2>
-                <p class="max-w-2xl mb-0 mx-auto">The Baya Company has been shaping exceptional urban communities with a
-                    commitment to quality, innovation, and timeless architecture.</p>
-            </div>
-            <div class="row g-4 mt-5">
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="glass text-center h-100 position-relative overflow-hidden fade-up">
-                        <div class="counter-text" data-target="25"> 0 </div>
-                        <div class="mt-3 small text-secondary"> Years of Excellence </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="glass  text-center h-100 position-relative overflow-hidden fade-up" data-delay="200">
-                        <div class="counter-text" data-target="50"> 0 </div>
-                        <div class="mt-3 small text-secondary"> Landmark Projects Delivered </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="glass text-center h-100 position-relative overflow-hidden fade-up" data-delay="300">
-                        <div class="counter-text" data-target="10000"> 10,000+ </div>
-                        <div class="mt-3 small text-secondary"> Happy Residents </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="glass text-center h-100 position-relative overflow-hidden fade-up" data-delay="400">
-                        <div class="counter-text" data-target="8"> 0 </div>
-                        <div class="mt-3 small text-secondary"> Acres of Development </div>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="mt-4 glass-gold d-flex flex-column flex-md-row align-items-center justify-content-center gap-2 gap-sm-4 rounded-4 px-4 px-md-5 py-4 text-center fade-up">
-                <span class="glass-gold-text" style="letter-spacing:.3em;">
-                    Unit Types
-                </span> <span class="d-none d-md-block" style="width:1px;height:20px;background:rgba(212,175,55,.4);">
-                </span> <span class="glass-gold-bhk">
-                    3 · 3+1 · 4 &amp; 4+1 BHK Residences
-                </span> </div>
+      <div class="container-luxe">
+        <div class="d-flex flex-column gap-4 align-items-center text-center fade-up">
+          <span class="eyebrow">The Baya Company</span>
+          <h2 class="display-4 fw-medium text-center max-w-3xl h2-font"> Built on Trust. Designed for Generations. </h2>
+          <p class="max-w-2xl mb-0 mx-auto">The Baya Company has been shaping exceptional urban communities with a commitment to quality, innovation, and timeless architecture.</p>
         </div>
+        <div class="row g-4 mt-5">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="glass text-center h-100 position-relative overflow-hidden fade-up">
+              <div class="counter-text" data-target="25"> 0 </div>
+              <div class="mt-3 small text-secondary"> Years of Excellence </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="glass  text-center h-100 position-relative overflow-hidden fade-up" data-delay="200">
+              <div class="counter-text" data-target="50"> 0 </div>
+              <div class="mt-3 small text-secondary"> Landmark Projects Delivered </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="glass text-center h-100 position-relative overflow-hidden fade-up" data-delay="300">
+              <div class="counter-text" data-target="10000"> 10,000+ </div>
+              <div class="mt-3 small text-secondary"> Happy Residents </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="glass text-center h-100 position-relative overflow-hidden fade-up" data-delay="400">
+              <div class="counter-text" data-target="8"> 0 </div>
+              <div class="mt-3 small text-secondary"> Acres of Development </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 glass-gold d-flex flex-column flex-md-row align-items-center justify-content-center gap-2 gap-sm-4 rounded-4 px-4 px-md-5 py-4 text-center fade-up">
+          <span class="glass-gold-text" style="letter-spacing:.3em;"> Unit Types </span>
+          <span class="d-none d-md-block" style="width:1px;height:20px;background:rgba(212,175,55,.4);"></span>
+          <span class="glass-gold-bhk"> 3 · 3+1 · 4 &amp; 4+1 BHK Residences </span>
+        </div>
+      </div>
     </section>
     <section id="amenities" class="section-pad relative">
-        <div class="container-luxe">
-            <div class="d-flex flex-column gap-4 align-items-center text-center fade-up"> <span class="eyebrow">World-Class
-                    Amenities</span>
-                <h2 class="display-4 fw-medium text-center max-w-3xl h2-font">
-                    Amenities That Elevate Everyday Living
-                </h2>
-                <p class="max-w-2xl mb-0 mx-auto">Over thirty curated experiences across wellness, leisure, security and
-                    community — designed to make every day feel exceptional. </p>
-            </div>
-            <div class="row g-4 mt-4">
-                <!-- Card 1 -->
-                <div class="col-12 col-md-6">
-                    <div class="glass fade-left">
-                        <div class="d-flex align-items-center gap-3 mb-4 amenities-top-content"> <span
-                                class="fs-4 text-gold" style="font-family:Cormorant Garamond,serif;">01</span>
-                            <div class="flex-grow-1 border-hr"></div>
-                            <h3 class="mb-0 card-top-right-text">Fitness</h3>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-dumbbell size-5" aria-hidden="true">
-                                            <path
-                                                d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z">
-                                            </path>
-                                            <path d="m2.5 21.5 1.4-1.4"></path>
-                                            <path d="m20.1 3.9 1.4-1.4"></path>
-                                            <path
-                                                d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z">
-                                            </path>
-                                            <path d="m9.6 14.4 4.8-4.8"></path>
-                                        </svg>
-                                    </span> <span class="small-text">Fully equipped gymnasium</span> </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-activity size-5" aria-hidden="true">
-                                            <path
-                                                d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2">
-                                            </path>
-                                        </svg>
-                                    </span> <span class="small-text">Open-air fitness zones</span> </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-waves size-5" aria-hidden="true">
-                                            <path
-                                                d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1">
-                                            </path>
-                                            <path
-                                                d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1">
-                                            </path>
-                                            <path
-                                                d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1">
-                                            </path>
-                                        </svg>
-                                    </span> <span class="small-text">Swimming pool</span> </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-flower2 lucide-flower-2 size-5" aria-hidden="true">
-                                            <path
-                                                d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1">
-                                            </path>
-                                            <circle cx="12" cy="8" r="2"></circle>
-                                            <path d="M12 10v12"></path>
-                                            <path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z"></path>
-                                            <path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z"></path>
-                                        </svg>
-                                    </span> <span class="small-text">Yoga deck</span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-12 col-md-6">
-                    <div class="glass fade-right ">
-                        <div class="d-flex align-items-center gap-3 mb-4 amenities-top-content"> <span
-                                class="fs-4 text-gold" style="font-family:Cormorant Garamond,serif;">02</span>
-                            <div class="flex-grow-1 border-hr"></div>
-                            <h3 class="mb-0 card-top-right-text">Lifestyle & Entertainment</h3>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-wine size-5" aria-hidden="true">
-                                            <path d="M8 22h8"></path>
-                                            <path d="M7 10h10"></path>
-                                            <path d="M12 15v7"></path>
-                                            <path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z">
-                                            </path>
-                                        </svg>
-                                    </span> <span class="small-text">Rooftop lounges</span> </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-flame size-5" aria-hidden="true">
-                                            <path
-                                                d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4">
-                                            </path>
-                                        </svg>
-                                    </span> <span class="small-text">Barbecue decks</span> </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-trees size-5" aria-hidden="true">
-                                            <path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z">
-                                            </path>
-                                            <path d="M7 16v6"></path>
-                                            <path d="M13 19v3"></path>
-                                            <path
-                                                d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5">
-                                            </path>
-                                        </svg>
-                                    </span> <span class="small-text">Landscaped gardens</span> </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-gamepad2 lucide-gamepad-2 size-5" aria-hidden="true">
-                                            <line x1="6" x2="10" y1="11" y2="11"></line>
-                                            <line x1="8" x2="8" y1="9" y2="13"></line>
-                                            <line x1="15" x2="15.01" y1="12" y2="12"></line>
-                                            <line x1="18" x2="18.01" y1="10" y2="10"></line>
-                                            <path
-                                                d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z">
-                                            </path>
-                                        </svg>
-                                    </span> <span class="small-text">Indoor gaming zones</span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-12 col-md-6">
-                    <div class="glass fade-left">
-                        <div class="d-flex align-items-center gap-3 mb-4 amenities-top-content"> <span
-                                class="fs-4 text-gold" style="font-family:Cormorant Garamond,serif;">03</span>
-                            <div class="flex-grow-1 border-hr"></div>
-                            <h3 class="mb-0 card-top-right-text">Convenience & Safety</h3>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-shield-check size-5" aria-hidden="true">
-                                            <path
-                                                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                                            </path>
-                                            <path d="m9 12 2 2 4-4"></path>
-                                        </svg>
-                                    </span> <span class="small-text">24/7 CCTV security</span> </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-video size-5" aria-hidden="true">
-                                            <path
-                                                d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5">
-                                            </path>
-                                            <rect x="2" y="6" width="14" height="12" rx="2"></rect>
-                                        </svg>
-                                    </span> <span class="small-text">Video door phones</span> </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-car size-5" aria-hidden="true">
-                                            <path
-                                                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2">
-                                            </path>
-                                            <circle cx="7" cy="17" r="2"></circle>
-                                            <path d="M9 17h6"></path>
-                                            <circle cx="17" cy="17" r="2"></circle>
-                                        </svg>
-                                    </span> <span class="small-text">Dedicated parking</span> </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-scan-face size-5" aria-hidden="true">
-                                            <path d="M3 7V5a2 2 0 0 1 2-2h2"></path>
-                                            <path d="M17 3h2a2 2 0 0 1 2 2v2"></path>
-                                            <path d="M21 17v2a2 2 0 0 1-2 2h-2"></path>
-                                            <path d="M7 21H5a2 2 0 0 1-2-2v-2"></path>
-                                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                                            <path d="M9 9h.01"></path>
-                                            <path d="M15 9h.01"></path>
-                                        </svg>
-                                    </span> <span class="small-text">Smart access systems</span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 4-->
-                <div class="col-12 col-md-6">
-                    <div class="glass fade-right">
-                        <div class="d-flex align-items-center gap-3 mb-4 amenities-top-content"> <span
-                                class="fs-4 text-gold" style="font-family:Cormorant Garamond,serif;">04</span>
-                            <div class="flex-grow-1 border-hr"></div>
-                            <h3 class="mb-0 card-top-right-text">Community Features</h3>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-baby size-5" aria-hidden="true">
-                                            <path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"></path>
-                                            <path d="M15 12h.01"></path>
-                                            <path
-                                                d="M19.38 6.813A9 9 0 0 1 20.8 10.2a2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1">
-                                            </path>
-                                            <path d="M9 12h.01"></path>
-                                        </svg>
-                                    </span> <span class="small-text">Children's play areas</span> </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-sparkles size-5" aria-hidden="true">
-                                            <path
-                                                d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
-                                            </path>
-                                            <path d="M20 2v4"></path>
-                                            <path d="M22 4h-4"></path>
-                                            <circle cx="4" cy="20" r="2"></circle>
-                                        </svg>
-                                    </span> <span class="small-text">Meditation zones</span> </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-trophy size-5" aria-hidden="true">
-                                            <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path>
-                                            <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path>
-                                            <path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path>
-                                            <path d="M4 22h16"></path>
-                                            <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path>
-                                            <path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path>
-                                        </svg>
-                                    </span> <span class="small-text">Multipurpose courts</span> </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="d-flex align-items-center gap-3 card-box-amenities"> <span
-                                        class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                        style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-users size-5" aria-hidden="true">
-                                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                            <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
-                                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                            <circle cx="9" cy="7" r="4"></circle>
-                                        </svg>
-                                    </span> <span class="small-text">Community gathering spaces</span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container-luxe">
+        <div class="d-flex flex-column gap-4 align-items-center text-center fade-up">
+          <span class="eyebrow">World-Class Amenities</span>
+          <h2 class="display-4 fw-medium text-center max-w-3xl h2-font"> Amenities That Elevate Everyday Living </h2>
+          <p class="max-w-2xl mb-0 mx-auto">Over thirty curated experiences across wellness, leisure, security and community — designed to make every day feel exceptional. </p>
         </div>
+        <div class="row g-4 mt-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6">
+            <div class="glass fade-left">
+              <div class="d-flex align-items-center gap-3 mb-4 amenities-top-content">
+                <span class="fs-4 text-gold" style="font-family:Cormorant Garamond,serif;">01</span>
+                <div class="flex-grow-1 border-hr"></div>
+                <h3 class="mb-0 card-top-right-text">Fitness</h3>
+              </div>
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dumbbell size-5" aria-hidden="true">
+                        <path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z"></path>
+                        <path d="m2.5 21.5 1.4-1.4"></path>
+                        <path d="m20.1 3.9 1.4-1.4"></path>
+                        <path d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z"></path>
+                        <path d="m9.6 14.4 4.8-4.8"></path>
+                      </svg>
+                    </span>
+                    <span class="small-text">Fully equipped gymnasium</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity size-5" aria-hidden="true">
+                        <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
+                      </svg>
+                    </span>
+                    <span class="small-text">Open-air fitness zones</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waves size-5" aria-hidden="true">
+                        <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                        <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                        <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                      </svg>
+                    </span>
+                    <span class="small-text">Swimming pool</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flower2 lucide-flower-2 size-5" aria-hidden="true">
+                        <path d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1"></path>
+                        <circle cx="12" cy="8" r="2"></circle>
+                        <path d="M12 10v12"></path>
+                        <path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z"></path>
+                        <path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z"></path>
+                      </svg>
+                    </span>
+                    <span class="small-text">Yoga deck</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6">
+            <div class="glass fade-right ">
+              <div class="d-flex align-items-center gap-3 mb-4 amenities-top-content">
+                <span class="fs-4 text-gold" style="font-family:Cormorant Garamond,serif;">02</span>
+                <div class="flex-grow-1 border-hr"></div>
+                <h3 class="mb-0 card-top-right-text">Lifestyle & Entertainment</h3>
+              </div>
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wine size-5" aria-hidden="true">
+                        <path d="M8 22h8"></path>
+                        <path d="M7 10h10"></path>
+                        <path d="M12 15v7"></path>
+                        <path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"></path>
+                      </svg>
+                    </span>
+                    <span class="small-text">Rooftop lounges</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame size-5" aria-hidden="true">
+                        <path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"></path>
+                      </svg>
+                    </span>
+                    <span class="small-text">Barbecue decks</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trees size-5" aria-hidden="true">
+                        <path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"></path>
+                        <path d="M7 16v6"></path>
+                        <path d="M13 19v3"></path>
+                        <path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"></path>
+                      </svg>
+                    </span>
+                    <span class="small-text">Landscaped gardens</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad2 lucide-gamepad-2 size-5" aria-hidden="true">
+                        <line x1="6" x2="10" y1="11" y2="11"></line>
+                        <line x1="8" x2="8" y1="9" y2="13"></line>
+                        <line x1="15" x2="15.01" y1="12" y2="12"></line>
+                        <line x1="18" x2="18.01" y1="10" y2="10"></line>
+                        <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path>
+                      </svg>
+                    </span>
+                    <span class="small-text">Indoor gaming zones</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6">
+            <div class="glass fade-left">
+              <div class="d-flex align-items-center gap-3 mb-4 amenities-top-content">
+                <span class="fs-4 text-gold" style="font-family:Cormorant Garamond,serif;">03</span>
+                <div class="flex-grow-1 border-hr"></div>
+                <h3 class="mb-0 card-top-right-text">Convenience & Safety</h3>
+              </div>
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check size-5" aria-hidden="true">
+                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                        <path d="m9 12 2 2 4-4"></path>
+                      </svg>
+                    </span>
+                    <span class="small-text">24/7 CCTV security</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video size-5" aria-hidden="true">
+                        <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
+                        <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+                      </svg>
+                    </span>
+                    <span class="small-text">Video door phones</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car size-5" aria-hidden="true">
+                        <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path>
+                        <circle cx="7" cy="17" r="2"></circle>
+                        <path d="M9 17h6"></path>
+                        <circle cx="17" cy="17" r="2"></circle>
+                      </svg>
+                    </span>
+                    <span class="small-text">Dedicated parking</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scan-face size-5" aria-hidden="true">
+                        <path d="M3 7V5a2 2 0 0 1 2-2h2"></path>
+                        <path d="M17 3h2a2 2 0 0 1 2 2v2"></path>
+                        <path d="M21 17v2a2 2 0 0 1-2 2h-2"></path>
+                        <path d="M7 21H5a2 2 0 0 1-2-2v-2"></path>
+                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                        <path d="M9 9h.01"></path>
+                        <path d="M15 9h.01"></path>
+                      </svg>
+                    </span>
+                    <span class="small-text">Smart access systems</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4-->
+          <div class="col-12 col-md-6">
+            <div class="glass fade-right">
+              <div class="d-flex align-items-center gap-3 mb-4 amenities-top-content">
+                <span class="fs-4 text-gold" style="font-family:Cormorant Garamond,serif;">04</span>
+                <div class="flex-grow-1 border-hr"></div>
+                <h3 class="mb-0 card-top-right-text">Community Features</h3>
+              </div>
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-baby size-5" aria-hidden="true">
+                        <path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"></path>
+                        <path d="M15 12h.01"></path>
+                        <path d="M19.38 6.813A9 9 0 0 1 20.8 10.2a2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"></path>
+                        <path d="M9 12h.01"></path>
+                      </svg>
+                    </span>
+                    <span class="small-text">Children's play areas</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles size-5" aria-hidden="true">
+                        <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
+                        <path d="M20 2v4"></path>
+                        <path d="M22 4h-4"></path>
+                        <circle cx="4" cy="20" r="2"></circle>
+                      </svg>
+                    </span>
+                    <span class="small-text">Meditation zones</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy size-5" aria-hidden="true">
+                        <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path>
+                        <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path>
+                        <path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path>
+                        <path d="M4 22h16"></path>
+                        <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path>
+                        <path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path>
+                      </svg>
+                    </span>
+                    <span class="small-text">Multipurpose courts</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex align-items-center gap-3 card-box-amenities">
+                    <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="width:40px;height:40px; background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users size-5" aria-hidden="true">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                      </svg>
+                    </span>
+                    <span class="small-text">Community gathering spaces</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="about" class="section-pad relative ">
-        <div class="container-luxe">
-            <div class="custome-flex">
-                <!-- Image -->
-                <div class="custome-flex-col">
-                    <div class="position-relative">
-                        <div class="overflow-hidden image-reveal reveal-section">    <div class="reveal-overlay"></div> <img src="images/about-architecture.jpg"
-                                alt="Luxury Architecture" class="img-fluid w-100 "
-                                style="aspect-ratio:4/5; object-fit:cover; border-radius: 10px;"> 
-                            
-                            </div>
-                        <!-- Floating Counter Box -->
-
-                        <div class="about-year-box glass-gold  shadow fade-left">
-                            <div class="text-gold Years-box"> 25+ </div>
-                            <div class=" crafting"> Years crafting Mumbai </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Content -->
-                <div class="custome-flex-col ">
-                    <div class="d-flex flex-column gap-4">
-                        <!-- Subtitle --><span class="eyebrow fade-up">
-                            About The Baya Company
-                        </span>
-                        <!-- Heading -->
-                        <h2 class="h2-font fade-up">
-                            Crafting Trust Through
-                            <span class="text-gradient-gold fst-italic ">
-                                Timeless Spaces
-                            </span>
-                        </h2>
-                        <!-- Paragraph -->
-                        <p class="mb-0 fade-up"> The Baya Company has earned a strong reputation for delivering thoughtfully
-                            designed developments that blend functionality, aesthetics, and long-term value. With
-                            decades of experience in real estate development, the company continues to create spaces
-                            that inspire better living and stronger communities. </p>
-                        <p class="mb-0 fade-up"> Driven by quality craftsmanship, customer trust, and innovation, The Baya
-                            Company has successfully delivered landmark residential and commercial projects across
-                            Mumbai. </p>
-                        <!-- Divider -->
-                        <div class="hairline fade-up"></div>
-                        <!-- Button -->
-                        <div>
-                            <button class="btn button-secondary-about fade-up"> Connect With Our Team </button>
-                        </div>
-                    </div>
-                </div>
+      <div class="container-luxe">
+        <div class="custome-flex">
+          <!-- Image -->
+          <div class="custome-flex-col">
+            <div class="position-relative">
+              <div class="overflow-hidden image-reveal reveal-section">
+                <div class="reveal-overlay"></div>
+                <img src="images/about-architecture.jpg" alt="Luxury Architecture" class="img-fluid w-100 " style="aspect-ratio:4/5; object-fit:cover; border-radius: 10px;">
+              </div>
+              <!-- Floating Counter Box -->
+              <div class="about-year-box glass-gold  shadow fade-left">
+                <div class="text-gold Years-box"> 25+ </div>
+                <div class=" crafting"> Years crafting Mumbai </div>
+              </div>
             </div>
+          </div>
+          <!-- Content -->
+          <div class="custome-flex-col ">
+            <div class="d-flex flex-column gap-4">
+              <!-- Subtitle -->
+              <span class="eyebrow fade-up"> About The Baya Company </span>
+              <!-- Heading -->
+              <h2 class="h2-font fade-up"> Crafting Trust Through <span class="text-gradient-gold fst-italic "> Timeless Spaces </span>
+              </h2>
+              <!-- Paragraph -->
+              <p class="mb-0 fade-up"> The Baya Company has earned a strong reputation for delivering thoughtfully designed developments that blend functionality, aesthetics, and long-term value. With decades of experience in real estate development, the company continues to create spaces that inspire better living and stronger communities. </p>
+              <p class="mb-0 fade-up"> Driven by quality craftsmanship, customer trust, and innovation, The Baya Company has successfully delivered landmark residential and commercial projects across Mumbai. </p>
+              <!-- Divider -->
+              <div class="hairline fade-up"></div>
+              <!-- Button -->
+              <div>
+                <button class="btn button-secondary-about fade-up"> Connect With Our Team </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section id="gallery" class="gallery-section section-pad relative">
-        <div class="container-luxe">
-            <div class="d-flex flex-column gap-4 align-items-center text-center mb-5 fade-up" > <span
-                    class="eyebrow">Media Gallery</span>
-                <h2 class="display-4 fw-medium text-center max-w-3xl h2-font">Experience The Lifestyle</h2>
-                <p class="max-w-2xl mb-0 mx-auto px-5">A glimpse into the spaces, finishes and amenities that define
-                    life at The Baya Mankhurd.</p>
-            </div>
-            <div class="custom-gallery-grid ">
-                <div class="gallery-item item-building fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                    onclick="openGallery(0)">
-                    <div class="gallery-card"> <img src="images/gallery-exterior.jpg" alt="Exterior Renders">
-                        <div class="gallery-overlay">
-                            <button class="view-btn">VIEW</button>
-                            <h4>Exterior Renders</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item item-lobby fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                    onclick="openGallery(1)">
-                    <div class="gallery-card"> <img src="images/gallery-lobby.jpg" alt="Lobby">
-                        <div class="gallery-overlay">
-                            <button class="view-btn">VIEW</button>
-                            <h4>Grand Lobby</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item item-living fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                    onclick="openGallery(2)">
-                    <div class="gallery-card"> <img src="images/gallery-living-.jpg" alt="Living Room">
-                        <div class="gallery-overlay">
-                            <button class="view-btn">VIEW</button>
-                            <h4>Living Room</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item item-pool fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                    onclick="openGallery(3)">
-                    <div class="gallery-card"> <img src="images/gallery-pool.jpg" alt="Infinity Pool">
-                        <div class="gallery-overlay">
-                            <button class="view-btn">VIEW</button>
-                            <h4>Rooftop Pool</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item item-bedroom fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                    onclick="openGallery(4)">
-                    <div class="gallery-card"> <img src="images/gallery-bedroom.jpg" alt="Bedroom">
-                        <div class="gallery-overlay">
-                            <button class="view-btn">VIEW</button>
-                            <h4>Master Bedroom</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item item-lounge fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                    onclick="openGallery(5)">
-                    <div class="gallery-card"> <img src="images/gallery-clubhouse.jpg" alt="Lounge">
-                        <div class="gallery-overlay">
-                            <button class="view-btn">VIEW</button>
-                            <h4>Clubhouse</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item item-garden fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal"
-                    onclick="openGallery(6)">
-                    <div class="gallery-card"> <img src="images/gallery-landscape.jpg" alt="Landscape Garden">
-                        <div class="gallery-overlay">
-                            <button class="view-btn">VIEW</button>
-                            <h4>Landscape Areas</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container-luxe">
+        <div class="d-flex flex-column gap-4 align-items-center text-center mb-5 fade-up">
+          <span class="eyebrow">Media Gallery</span>
+          <h2 class="display-4 fw-medium text-center max-w-3xl h2-font">Experience The Lifestyle</h2>
+          <p class="max-w-2xl mb-0 mx-auto px-5">A glimpse into the spaces, finishes and amenities that define life at The Baya Mankhurd.</p>
         </div>
+        <div class="custom-gallery-grid ">
+          <div class="gallery-item item-building fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(0)">
+            <div class="gallery-card">
+              <img src="images/gallery-exterior.jpg" alt="Exterior Renders">
+              <div class="gallery-overlay">
+                <button class="view-btn">VIEW</button>
+                <h4>Exterior Renders</h4>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item item-lobby fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(1)">
+            <div class="gallery-card">
+              <img src="images/gallery-lobby.jpg" alt="Lobby">
+              <div class="gallery-overlay">
+                <button class="view-btn">VIEW</button>
+                <h4>Grand Lobby</h4>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item item-living fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(2)">
+            <div class="gallery-card">
+              <img src="images/gallery-living-.jpg" alt="Living Room">
+              <div class="gallery-overlay">
+                <button class="view-btn">VIEW</button>
+                <h4>Living Room</h4>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item item-pool fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(3)">
+            <div class="gallery-card">
+              <img src="images/gallery-pool.jpg" alt="Infinity Pool">
+              <div class="gallery-overlay">
+                <button class="view-btn">VIEW</button>
+                <h4>Rooftop Pool</h4>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item item-bedroom fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(4)">
+            <div class="gallery-card">
+              <img src="images/gallery-bedroom.jpg" alt="Bedroom">
+              <div class="gallery-overlay">
+                <button class="view-btn">VIEW</button>
+                <h4>Master Bedroom</h4>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item item-lounge fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(5)">
+            <div class="gallery-card">
+              <img src="images/gallery-clubhouse.jpg" alt="Lounge">
+              <div class="gallery-overlay">
+                <button class="view-btn">VIEW</button>
+                <h4>Clubhouse</h4>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item item-garden fade-up" data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(6)">
+            <div class="gallery-card">
+              <img src="images/gallery-landscape.jpg" alt="Landscape Garden">
+              <div class="gallery-overlay">
+                <button class="view-btn">VIEW</button>
+                <h4>Landscape Areas</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="instant-access" class="section-pad relative">
-        <div class="container-luxe">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="glass-gold text-center  m-auto p-md-5 p-4 max-w-2xl position-relative z-2 fade-up"> <span
-                            class="eyebrow">
-                            Instant Access
-                        </span>
-                        <h3 class="h3-font">
-                            Get the Complete Project Brochure
-                        </h3>
-                        <p class="fs-6 mx-auto mt-3 mb-0 " style="max-width:448px;"> Receive floor plans, pricing
-                            details, amenities and project information instantly. </p>
-                        <form class="mt-4 max-w-md m-auto">
-                            <div class="mb-3">
-                                <input type="text" class="form-control form-control-lg text-center"
-                                    placeholder="Full Name" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="tel" class="form-control form-control-lg text-center"
-                                    placeholder="Mobile Number" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control form-control-lg text-center"
-                                    placeholder="Email Address" required>
-                            </div>
-                            <button type="submit"
-                                class="btn btn-gold d-inline-flex align-items-center justify-content-center gap-2 w-100 mt-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-file-down" aria-hidden="true">
-                                    <path
-                                        d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z">
-                                    </path>
-                                    <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
-                                    <path d="M12 18v-6"></path>
-                                    <path d="m9 15 3 3 3-3"></path>
-                                </svg> Download Brochure </button>
-                        </form>
-                    </div>
+      <div class="container-luxe">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="glass-gold text-center  m-auto p-md-5 p-4 max-w-2xl position-relative z-2 fade-up">
+              <span class="eyebrow"> Instant Access </span>
+              <h3 class="h3-font"> Get the Complete Project Brochure </h3>
+              <p class="fs-6 mx-auto mt-3 mb-0 " style="max-width:448px;"> Receive floor plans, pricing details, amenities and project information instantly. </p>
+              <form class="mt-4 max-w-md m-auto">
+                <div class="mb-3">
+                  <input type="text" class="form-control form-control-lg text-center" placeholder="Full Name" required>
                 </div>
+                <div class="mb-3">
+                  <input type="tel" class="form-control form-control-lg text-center" placeholder="Mobile Number" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control form-control-lg text-center" placeholder="Email Address" required>
+                </div>
+                <button type="submit" class="btn btn-gold d-inline-flex align-items-center justify-content-center gap-2 w-100 mt-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-down" aria-hidden="true">
+                    <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
+                    <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                    <path d="M12 18v-6"></path>
+                    <path d="m9 15 3 3 3-3"></path>
+                  </svg> Download Brochure </button>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section id="location" class="section-pad relative">
-        <div class="container-luxe">
-            <!-- Heading -->
-            <div class="d-flex flex-column gap-3 align-items-center text-center fade-up" > <span
-                    class="eyebrow">Connectivity</span>
-                <h2 class="mb-0 text-center max-w-3xl h2-font">
-                    Where is Baya Mankhurd Located?</h2>
-                <p class="max-w-2xl mb-0 mx-auto">Strategically positioned for seamless access across Mumbai and Navi
-                    Mumbai.</p>
-            </div>
-            <div class="row gx-5 align-items-stretch mt-5 g-3">
-                <!-- Map -->
-                <div class="col-lg-6 fade-left">
-                    <div class="position-relative overflow-hidden h-100" style="border-radius: 15px;">
-                        <iframe title="The Baya Mankhurd Location Map"
-                            src="https://www.google.com/maps?q=Mankhurd,+Mumbai&output=embed" loading="lazy"
-                            class="w-100 h-100"
-                            style="border:0; min-height:506px; filter:invert(0.9) hue-rotate(180deg);"
-                            referrerpolicy="no-referrer-when-downgrade"> </iframe>
-                        <div class="map-loction-text glass-gold">
-                            <div class="d-flex align-items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide text-gold lucide-map-pin size-4"
-                                    aria-hidden="true">
-                                    <path
-                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                                    </path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg> <span class="text-gold">
-                                    The Baya · Mankhurd
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Right Side Cards -->
-                <div class="col-lg-6">
-                    <div class="d-flex flex-column gap-3">
-                        <!-- Card -->
-                        <div class="loction-right-box glass fade-right">
-                            <div class="d-flex gap-4"> <span
-                                    class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                    style="    width: calc(var(--spacing) * 12);
-    height: calc(var(--spacing) * 12); background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-route size-6" aria-hidden="true">
-                                        <circle cx="6" cy="19" r="3"></circle>
-                                        <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path>
-                                        <circle cx="18" cy="5" r="3"></circle>
-                                    </svg></span>
-                                <div>
-                                    <h4 class="h4 mb-2">Eastern Express Highway</h4>
-                                    <p class="mb-0"> Effortless north-south connectivity across the city. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="loction-right-box glass fade-right">
-                            <div class="d-flex gap-4"> <span
-                                    class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                    style="    width: calc(var(--spacing) * 12);
-    height: calc(var(--spacing) * 12); background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-train-front size-6"
-                                        aria-hidden="true">
-                                        <path d="M8 3.1V7a4 4 0 0 0 8 0V3.1"></path>
-                                        <path d="m9 15-1-1"></path>
-                                        <path d="m15 15 1-1"></path>
-                                        <path d="M9 19c-2.8 0-5-2.2-5-5v-4a8 8 0 0 1 16 0v4c0 2.8-2.2 5-5 5Z"></path>
-                                        <path d="m8 19-2 3"></path>
-                                        <path d="m16 19 2 3"></path>
-                                    </svg>
-                                </span>
-                                <div>
-                                    <h4 class="h4 mb-2">Mankhurd Railway Station
-                                    </h4>
-                                    <p class="mb-0"> Harbour line access just minutes from your doorstep. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="loction-right-box glass fade-right">
-                            <div class="d-flex gap-4"> <span
-                                    class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                    style="    width: calc(var(--spacing) * 12);
-    height: calc(var(--spacing) * 12); background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-map-pin size-6" aria-hidden="true">
-                                        <path
-                                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                                        </path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                </span>
-                                <div>
-                                    <h4 class="h4 mb-2">Navi Mumbai Access
-                                    </h4>
-                                    <p class="mb-0"> Quick links to Vashi, Belapur and the new growth corridor. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="loction-right-box glass fade-right">
-                            <div class="d-flex gap-4"> <span
-                                    class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                    style="    width: calc(var(--spacing) * 12);
-    height: calc(var(--spacing) * 12); background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-building2 lucide-building-2 size-6"
-                                        aria-hidden="true">
-                                        <path d="M10 12h4"></path>
-                                        <path d="M10 8h4"></path>
-                                        <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
-                                        <path
-                                            d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2">
-                                        </path>
-                                        <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
-                                    </svg>
-                                </span>
-                                <div>
-                                    <h4 class="h4 mb-2">Upcoming Infrastructure
-
-                                    </h4>
-                                    <p class="mb-0"> Metro lines and coastal connectivity in the vicinity. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="loction-right-box glass fade-right">
-                            <div class="d-flex gap-4"> <span
-                                    class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold"
-                                    style="    width: calc(var(--spacing) * 12);
-    height: calc(var(--spacing) * 12); background:color-mix(in oklab, var(--gold) 10%, transparent);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-graduation-cap size-6"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
-                                        </path>
-                                        <path d="M22 10v6"></path>
-                                        <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
-                                    </svg>
-                                </span>
-                                <div>
-                                    <h4 class="h4 mb-2">Schools & Hospitals
-
-
-                                    </h4>
-                                    <p class="mb-0"> Reputed institutions and healthcare close by. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container-luxe">
+        <!-- Heading -->
+        <div class="d-flex flex-column gap-3 align-items-center text-center fade-up">
+          <span class="eyebrow">Connectivity</span>
+          <h2 class="mb-0 text-center max-w-3xl h2-font"> Where is Baya Mankhurd Located?</h2>
+          <p class="max-w-2xl mb-0 mx-auto">Strategically positioned for seamless access across Mumbai and Navi Mumbai.</p>
         </div>
-    </section>
-     <section class="floor-plans-section section-pad relative">
-        <div class="container-luxe">
-            <div class="d-flex justify-content-sm-between">
-                <div class="d-flex flex-column gap-3 text-start fade-up" > <span class="eyebrow">Floor Plans
-                    </span>
-                    <h2 class="mb-0 max-w-3xl h2-font">
-                        Thoughtfully Planned Residences
-                    </h2>
-                    <p class="mb-0 ">Spacious layouts crafted to balance privacy, light and flow for the modern family.
-
-
-
-                    </p>
+        <div class="row gx-5 align-items-stretch mt-5 g-3">
+          <!-- Map -->
+          <div class="col-lg-6 fade-left">
+            <div class="position-relative overflow-hidden h-100" style="border-radius: 15px;">
+              <iframe title="The Baya Mankhurd Location Map" src="https://www.google.com/maps?q=Mankhurd,+Mumbai&output=embed" loading="lazy" class="w-100 h-100" style="border:0; min-height:506px; filter:invert(0.9) hue-rotate(180deg);" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="map-loction-text glass-gold">
+                <div class="d-flex align-items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-gold lucide-map-pin size-4" aria-hidden="true">
+                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span class="text-gold"> The Baya · Mankhurd </span>
                 </div>
-                <div class="hidden-button" >
-                    <button class="button-prev" aria-label="Previous">
-                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left " aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
-                        <button class="button-next" aria-label="Next">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button>
-                        </div>
+              </div>
             </div>
-<div class="swiper floorplan-slider mt-5">
-    <div class="swiper-wrapper">
-
- <!-- Card 1 -->
-        <div class="swiper-slide">
-       <div class="floorplan-card position-relative">
-
-    <div class="overflow-hidden glass hover-remove p-0">
-
-        <!-- Image -->
-        <div class="position-relative overflow-hidden">
-
-            <img src="images/floorplan-3bhk.jpg"
-                 alt="3 BHK Floor Plan"
-                 class="img-fluid w-100 floorplan-img">
-
-            <!-- Hover Overlay -->
-            <div class="floorplan-overlay">
-
-                <button type="button"
-                        class="hover-svg-icon bg-transparent border-0"
-                        data-bs-toggle="modal"
-                        data-bs-target="#floorplanModal"
-                         onclick="openFloorPlan(
+          </div>
+          <!-- Right Side Cards -->
+          <div class="col-lg-6">
+            <div class="d-flex flex-column gap-3">
+              <!-- Card -->
+              <div class="loction-right-box glass fade-right">
+                <div class="d-flex gap-4">
+                  <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="    width: calc(var(--spacing) * 12);
+    height: calc(var(--spacing) * 12); background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-route size-6" aria-hidden="true">
+                      <circle cx="6" cy="19" r="3"></circle>
+                      <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path>
+                      <circle cx="18" cy="5" r="3"></circle>
+                    </svg>
+                  </span>
+                  <div>
+                    <h4 class="h4 mb-2">Eastern Express Highway</h4>
+                    <p class="mb-0"> Effortless north-south connectivity across the city. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="loction-right-box glass fade-right">
+                <div class="d-flex gap-4">
+                  <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="    width: calc(var(--spacing) * 12);
+    height: calc(var(--spacing) * 12); background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-train-front size-6" aria-hidden="true">
+                      <path d="M8 3.1V7a4 4 0 0 0 8 0V3.1"></path>
+                      <path d="m9 15-1-1"></path>
+                      <path d="m15 15 1-1"></path>
+                      <path d="M9 19c-2.8 0-5-2.2-5-5v-4a8 8 0 0 1 16 0v4c0 2.8-2.2 5-5 5Z"></path>
+                      <path d="m8 19-2 3"></path>
+                      <path d="m16 19 2 3"></path>
+                    </svg>
+                  </span>
+                  <div>
+                    <h4 class="h4 mb-2">Mankhurd Railway Station </h4>
+                    <p class="mb-0"> Harbour line access just minutes from your doorstep. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="loction-right-box glass fade-right">
+                <div class="d-flex gap-4">
+                  <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="    width: calc(var(--spacing) * 12);
+    height: calc(var(--spacing) * 12); background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin size-6" aria-hidden="true">
+                      <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </span>
+                  <div>
+                    <h4 class="h4 mb-2">Navi Mumbai Access </h4>
+                    <p class="mb-0"> Quick links to Vashi, Belapur and the new growth corridor. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="loction-right-box glass fade-right">
+                <div class="d-flex gap-4">
+                  <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="    width: calc(var(--spacing) * 12);
+    height: calc(var(--spacing) * 12); background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 lucide-building-2 size-6" aria-hidden="true">
+                      <path d="M10 12h4"></path>
+                      <path d="M10 8h4"></path>
+                      <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
+                      <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path>
+                      <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
+                    </svg>
+                  </span>
+                  <div>
+                    <h4 class="h4 mb-2">Upcoming Infrastructure </h4>
+                    <p class="mb-0"> Metro lines and coastal connectivity in the vicinity. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="loction-right-box glass fade-right">
+                <div class="d-flex gap-4">
+                  <span class="d-flex align-items-center justify-content-center rounded-3  bg-opacity-10 text-gold" style="    width: calc(var(--spacing) * 12);
+    height: calc(var(--spacing) * 12); background:color-mix(in oklab, var(--gold) 10%, transparent);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap size-6" aria-hidden="true">
+                      <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
+                      <path d="M22 10v6"></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </svg>
+                  </span>
+                  <div>
+                    <h4 class="h4 mb-2">Schools & Hospitals </h4>
+                    <p class="mb-0"> Reputed institutions and healthcare close by. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="floor-plans-section section-pad relative">
+      <div class="container-luxe">
+        <div class="d-flex justify-content-sm-between">
+          <div class="d-flex flex-column gap-3 text-start fade-up">
+            <span class="eyebrow">Floor Plans </span>
+            <h2 class="mb-0 max-w-3xl h2-font"> Thoughtfully Planned Residences </h2>
+            <p class="mb-0 ">Spacious layouts crafted to balance privacy, light and flow for the modern family. </p>
+          </div>
+          <div class="hidden-button">
+            <button class="button-prev" aria-label="Previous">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left " aria-hidden="true">
+                <path d="m15 18-6-6 6-6"></path>
+              </svg>
+            </button>
+            <button class="button-next" aria-label="Next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right" aria-hidden="true">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="swiper floorplan-slider mt-5">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide">
+              <div class="floorplan-card position-relative">
+                <div class="overflow-hidden glass hover-remove p-0">
+                  <!-- Image -->
+                  <div class="position-relative overflow-hidden">
+                    <img src="images/floorplan-3bhk.jpg" alt="3 BHK Floor Plan" class="img-fluid w-100 floorplan-img">
+                    <!-- Hover Overlay -->
+                    <div class="floorplan-overlay">
+                      <button type="button" class="hover-svg-icon bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#floorplanModal" onclick="openFloorPlan(
         'images/floorplan-3bhk.jpg',
         '3 BHK',
         'Approx. 1,250 sq.ft.'
     )">
-
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         width="40"
-                         height="40"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2"
-                         stroke-linecap="round"
-                         stroke-linejoin="round"
-                         class="text-gold">
-                        <path d="M15 3h6v6"></path>
-                        <path d="m21 3-7 7"></path>
-                        <path d="m3 21 7-7"></path>
-                        <path d="M9 21H3v-6"></path>
-                    </svg>
-
-                </button>
-
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold">
+                          <path d="M15 3h6v6"></path>
+                          <path d="m21 3-7 7"></path>
+                          <path d="m3 21 7-7"></path>
+                          <path d="M9 21H3v-6"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Content -->
+                  <div class="p-4 d-flex justify-content-between align-items-center">
+                    <div>
+                      <h3 class="h4 mb-1">3 BHK</h3>
+                      <p class="mb-0" style="font-size:14px;"> Approx. 1,250 sq.ft. </p>
+                    </div>
+                    <button class="text-gold floor-plan-btn" data-bs-toggle="modal" data-bs-target="#FloorPlan3BHK"> View Plan </button>
+                  </div>
+                </div>
+              </div>
             </div>
-
-        </div>
-
-        <!-- Content -->
-        <div class="p-4 d-flex justify-content-between align-items-center">
-
-            <div>
-                <h3 class="h4 mb-1">3 BHK</h3>
-                <p class="mb-0" style="font-size:14px;">
-                    Approx. 1,250 sq.ft.
-                </p>
-            </div>
-
-            <button class="text-gold floor-plan-btn"  data-bs-toggle="modal" data-bs-target="#FloorPlan3BHK">
-                View Plan
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-</div>
-
-        <!-- Card 2 -->
-         <div class="swiper-slide">
-       <div class="floorplan-card position-relative">
-
-    <div class="overflow-hidden glass hover-remove p-0">
-
-        <!-- Image -->
-        <div class="position-relative overflow-hidden">
-
-            <img src="images/floorplan-3plus-CFYn2eeb.jpg"
-                 alt="3 BHK Floor Plan"
-                 class="img-fluid w-100 floorplan-img">
-
-            <!-- Hover Overlay -->
-            <div class="floorplan-overlay">
-
-                <button type="button"
-                        class="hover-svg-icon bg-transparent border-0"
-                        data-bs-toggle="modal"
-                        data-bs-target="#floorplanModal"
-                        onclick="openFloorPlan(
+            <!-- Card 2 -->
+            <div class="swiper-slide">
+              <div class="floorplan-card position-relative">
+                <div class="overflow-hidden glass hover-remove p-0">
+                  <!-- Image -->
+                  <div class="position-relative overflow-hidden">
+                    <img src="images/floorplan-3plus-CFYn2eeb.jpg" alt="3 BHK Floor Plan" class="img-fluid w-100 floorplan-img">
+                    <!-- Hover Overlay -->
+                    <div class="floorplan-overlay">
+                      <button type="button" class="hover-svg-icon bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#floorplanModal" onclick="openFloorPlan(
         'images/floorplan-3plus-CFYn2eeb.jpg',
         '3+1 BHK',
         'Approx. 1,520 sq.ft.'
     )">
-
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         width="40"
-                         height="40"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2"
-                         stroke-linecap="round"
-                         stroke-linejoin="round"
-                         class="text-gold">
-                        <path d="M15 3h6v6"></path>
-                        <path d="m21 3-7 7"></path>
-                        <path d="m3 21 7-7"></path>
-                        <path d="M9 21H3v-6"></path>
-                    </svg>
-
-                </button>
-
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold">
+                          <path d="M15 3h6v6"></path>
+                          <path d="m21 3-7 7"></path>
+                          <path d="m3 21 7-7"></path>
+                          <path d="M9 21H3v-6"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Content -->
+                  <div class="p-4 d-flex justify-content-between align-items-center">
+                    <div>
+                      <h3 class="h4 mb-1">3+1 BHK</h3>
+                      <p class="mb-0" style="font-size:14px;"> Approx. 1,520 sq.ft. </p>
+                    </div>
+                    <button class="text-gold floor-plan-btn" data-bs-toggle="modal" data-bs-target="#FloorPlan3plusBHK"> View Plan </button>
+                  </div>
+                </div>
+              </div>
             </div>
-
-        </div>
-
-        <!-- Content -->
-        <div class="p-4 d-flex justify-content-between align-items-center">
-
-            <div>
-                <h3 class="h4 mb-1">3+1 BHK</h3>
-                <p class="mb-0" style="font-size:14px;">
-                    Approx. 1,520 sq.ft.
-                </p>
-            </div>
-
-            <button class="text-gold floor-plan-btn" data-bs-toggle="modal" data-bs-target="#FloorPlan3plusBHK">
-                View Plan
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-</div>
-       
-
-        <!-- Card 3 -->
-        <div class="swiper-slide">
-       <div class="floorplan-card position-relative">
-
-    <div class="overflow-hidden glass hover-remove p-0">
-
-        <!-- Image -->
-        <div class="position-relative overflow-hidden">
-
-            <img src="images/floorplan-4bhk.jpg"
-                 alt="3 BHK Floor Plan"
-                 class="img-fluid w-100 floorplan-img">
-
-            <!-- Hover Overlay -->
-            <div class="floorplan-overlay">
-
-                <button type="button"
-                        class="hover-svg-icon bg-transparent border-0"
-                        data-bs-toggle="modal"
-                        data-bs-target="#floorplanModal"
-                        onclick="openFloorPlan(
+            <!-- Card 3 -->
+            <div class="swiper-slide">
+              <div class="floorplan-card position-relative">
+                <div class="overflow-hidden glass hover-remove p-0">
+                  <!-- Image -->
+                  <div class="position-relative overflow-hidden">
+                    <img src="images/floorplan-4bhk.jpg" alt="3 BHK Floor Plan" class="img-fluid w-100 floorplan-img">
+                    <!-- Hover Overlay -->
+                    <div class="floorplan-overlay">
+                      <button type="button" class="hover-svg-icon bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#floorplanModal" onclick="openFloorPlan(
         'images/floorplan-4bhk.jpg',
         '4 BHK',
         'Approx. 1,840 sq.ft..'
     )">
-
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         width="40"
-                         height="40"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2"
-                         stroke-linecap="round"
-                         stroke-linejoin="round"
-                         class="text-gold">
-                        <path d="M15 3h6v6"></path>
-                        <path d="m21 3-7 7"></path>
-                        <path d="m3 21 7-7"></path>
-                        <path d="M9 21H3v-6"></path>
-                    </svg>
-
-                </button>
-
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold">
+                          <path d="M15 3h6v6"></path>
+                          <path d="m21 3-7 7"></path>
+                          <path d="m3 21 7-7"></path>
+                          <path d="M9 21H3v-6"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Content -->
+                  <div class="p-4 d-flex justify-content-between align-items-center">
+                    <div>
+                      <h3 class="h4 mb-1">4 BHK</h3>
+                      <p class="mb-0" style="font-size:14px;"> Approx. 1,840 sq.ft. </p>
+                    </div>
+                    <button class="text-gold floor-plan-btn" data-bs-toggle="modal" data-bs-target="#FloorPlan4BHK"> View Plan </button>
+                  </div>
+                </div>
+              </div>
             </div>
-
-        </div>
-
-        <!-- Content -->
-        <div class="p-4 d-flex justify-content-between align-items-center">
-
-            <div>
-                <h3 class="h4 mb-1">4 BHK</h3>
-                <p class="mb-0" style="font-size:14px;">
-                  Approx. 1,840 sq.ft.
-                </p>
-            </div>
-
-            <button class="text-gold floor-plan-btn" data-bs-toggle="modal" data-bs-target="#FloorPlan4BHK">
-                View Plan
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-</div>
-
-        <!-- Card 4 -->
-         <div class="swiper-slide">
-       <div class="floorplan-card position-relative">
-
-    <div class="overflow-hidden glass hover-remove p-0">
-
-        <!-- Image -->
-        <div class="position-relative overflow-hidden">
-
-            <img src="images/floorplan-4plus.jpg"
-                 alt="3 BHK Floor Plan"
-                 class="img-fluid w-100 floorplan-img">
-
-            <!-- Hover Overlay -->
-            <div class="floorplan-overlay">
-
-                <button type="button"
-                        class="hover-svg-icon bg-transparent border-0"
-                        data-bs-toggle="modal"
-                        data-bs-target="#floorplanModal"
-                        onclick="openFloorPlan(
+            <!-- Card 4 -->
+            <div class="swiper-slide">
+              <div class="floorplan-card position-relative">
+                <div class="overflow-hidden glass hover-remove p-0">
+                  <!-- Image -->
+                  <div class="position-relative overflow-hidden">
+                    <img src="images/floorplan-4plus.jpg" alt="3 BHK Floor Plan" class="img-fluid w-100 floorplan-img">
+                    <!-- Hover Overlay -->
+                    <div class="floorplan-overlay">
+                      <button type="button" class="hover-svg-icon bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#floorplanModal" onclick="openFloorPlan(
         'images/floorplan-4plus.jpg',
         '4+1 BHK',
         'Approx. 2,180 sq.ft.'
-    )"
-                      >
-
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         width="40"
-                         height="40"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2"
-                         stroke-linecap="round"
-                         stroke-linejoin="round"
-                         class="text-gold">
-                        <path d="M15 3h6v6"></path>
-                        <path d="m21 3-7 7"></path>
-                        <path d="m3 21 7-7"></path>
-                        <path d="M9 21H3v-6"></path>
-                    </svg>
-
-                </button>
-
+    )">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold">
+                          <path d="M15 3h6v6"></path>
+                          <path d="m21 3-7 7"></path>
+                          <path d="m3 21 7-7"></path>
+                          <path d="M9 21H3v-6"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Content -->
+                  <div class="p-4 d-flex justify-content-between align-items-center">
+                    <div>
+                      <h3 class="h4 mb-1">4+1 BHK</h3>
+                      <p class="mb-0" style="font-size:14px;"> Approx. 2,180 sq.ft. </p>
+                    </div>
+                    <button class="text-gold floor-plan-btn" data-bs-toggle="modal" data-bs-target="#FloorPlan4plusBHK"> View Plan </button>
+                  </div>
+                </div>
+              </div>
             </div>
-
+          </div>
         </div>
-
-        <!-- Content -->
-        <div class="p-4 d-flex justify-content-between align-items-center">
-
-            <div>
-                <h3 class="h4 mb-1">4+1 BHK</h3>
-                <p class="mb-0" style="font-size:14px;">
-                    Approx. 2,180 sq.ft.
-                </p>
-            </div>
-
-            <button class="text-gold floor-plan-btn" data-bs-toggle="modal" data-bs-target="#FloorPlan4plusBHK">
-                View Plan
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-</div>
-
-    </div>
-
-</div>
-            
-        </div>
-
+      </div>
     </section>
-
     <section class="py-5  disclaimer">
-        <div class="container-luxe">
-            <div class="row gx-4 align-items-start gap-12">
-                <!-- Disclaimer -->
-                <div class="col-md">
-                    <h2 class="mb-4">
-                        Disclaimer
-                    </h2>
-                    <p class="mb-3"> The images and other details herein are only indicative. The Developer/Owner
-                        reserves the right to change any or all of these in the interest of the development, as per
-                        provision of law. Artist's impressions are used to illustrate amenities, specifications, images
-                        and other details. Tolerance of +/- 3% is possible in the unit areas on account of design and
-                        variances. All brands stated are subject to final decision of the project architect. </p>
-                    <p class="mb-0"> This electronic/printed material does not constitute an offer and/or contract of
-                        any type between the Developer/Owner and the recipient. No booking or allotment shall be deemed
-                        to have been made on the basis of this material. Any purchaser shall be governed by the terms
-                        and conditions of the agreement for sale/lease entered into between the parties. </p>
-                </div>
-                <!-- QR Code -->
-                <div class="col-md-auto text-center">
-                    <div class="d-flex flex-column g-2 align-items-center"> <img src="images/qr-code.jpg"
-                            alt="MahaRERA Project QR Code" width="120" height="120" class="img-fluid  rounded-3 p-2"
-                            style="border:1px solid #312d28;">
-                        <div class="text-uppercase mt-2" style="font-size: .65rem; letter-spacing: 2px; color: 
+      <div class="container-luxe">
+        <div class="row gx-4 align-items-start gap-12">
+          <!-- Disclaimer -->
+          <div class="col-md">
+            <h2 class="mb-4"> Disclaimer </h2>
+            <p class="mb-3"> The images and other details herein are only indicative. The Developer/Owner reserves the right to change any or all of these in the interest of the development, as per provision of law. Artist's impressions are used to illustrate amenities, specifications, images and other details. Tolerance of +/- 3% is possible in the unit areas on account of design and variances. All brands stated are subject to final decision of the project architect. </p>
+            <p class="mb-0"> This electronic/printed material does not constitute an offer and/or contract of any type between the Developer/Owner and the recipient. No booking or allotment shall be deemed to have been made on the basis of this material. Any purchaser shall be governed by the terms and conditions of the agreement for sale/lease entered into between the parties. </p>
+          </div>
+          <!-- QR Code -->
+          <div class="col-md-auto text-center">
+            <div class="d-flex flex-column g-2 align-items-center">
+              <img src="images/qr-code.jpg" alt="MahaRERA Project QR Code" width="120" height="120" class="img-fluid  rounded-3 p-2" style="border:1px solid #312d28;">
+              <div class="text-uppercase mt-2" style="font-size: .65rem; letter-spacing: 2px; color: 
 color-mix(in oklab, var(--muted-foreground) 70%, transparent);"> Scan for RERA </div>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-
-
-
-
     <footer class="footer-section">
-        <div class="container-luxe">
-            <div class="footer-grid">
-                <!-- Logo -->
-                <div class="footer-col">
-
-                    <div class="d-flex flex-column leading-none fade-up">
-                        <span class="font-display">THE BAYA</span>
-                        <span class="text-gold footer-logo-small-text">MANKHURD</span>
-                    </div>
-
-                    <p class="footer-logo-about mt-3 mb-0 max-w-xs fade-up"> Luxury living reimagined — crafted by The Baya
-                        Company for the modern Mumbai family. </p>
-                </div>
-                <!-- Quick Links -->
-                <div class="footer-col">
-                    <h5 class="mb-3 links-heading fade-up">Quick Links</h5>
-                    <div class="hairline mb-3 fade-up" style="max-width: 48px;"></div>
-                    <ul class="list-unstyled">
-                        <li class="mb-2 fade-up"><a href="#about" class="text-decoration-none ">Overview</a></li>
-                        <li class="mb-2 fade-up"><a href="#amenities" class="text-decoration-none ">Amenities</a> </li>
-                        <li class="mb-2 fade-up"><a href="#gallery" class="text-decoration-none ">Gallery</a></li>
-                        <li class="mb-2 fade-up"><a href="#floor-plans" class="text-decoration-none ">Floor
-                                Plans</a></li>
-                        <li class="mb-0 fade-up"><a href="#location" class="text-decoration-none ">Location</a></li>
-                    </ul>
-                </div>
-                <!-- Contact -->
-                <div class="footer-col">
-                    <h5 class="mb-3 links-heading fade-up">Get in Touch</h5>
-                    <div class="hairline mb-3 fade-up" style="max-width: 48px;"></div>
-                    <ul class="list-unstyled">
-                        <li class="mb-3 d-flex flex-row gap-2 fade-up"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-phone size-4 text-gold" aria-hidden="true">
-                                <path
-                                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-                                </path>
-                            </svg> <a href="tel:18003137171" class="text-decoration-none ">
-                                Toll Free: 1800 313 7171
-                            </a> </li>
-                        <li class="d-flex flex-row gap-2 fade-up"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-mail size-4 text-gold" aria-hidden="true">
-                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                            </svg> <a href="mailto:sales@thebayacompany.com" class="text-decoration-none ">
-                                sales@thebayacompany.com
-                            </a> </li>
-                    </ul>
-                </div>
-                <!-- Social -->
-                <div class="footer-col">
-                    <h5 class="mb-3 links-heading fade-up">Follow Us</h5>
-                    <div class="hairline mb-3 fade-up" style="max-width: 48px;"></div>
-                    <div class="d-flex gap-2">
-                        <a href="#"
-                            class="social-media-links text-gold d-flex align-items-center justify-content-center fade-up"> <svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-facebook size-4" aria-hidden="true">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg></a>
-                        <a href="#"
-                            class="social-media-links text-gold d-flex align-items-center justify-content-center fade-up"> <svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-instagram size-4" aria-hidden="true">
-                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-                            </svg></a>
-                        <a href="#"
-                            class="social-media-links text-gold d-flex align-items-center justify-content-center fade-up"> <svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-linkedin size-4" aria-hidden="true">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                </path>
-                                <rect width="4" height="12" x="2" y="9"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg></a>
-                        <a href="#"
-                            class="social-media-links text-gold d-flex align-items-center justify-content-center fade-up"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-youtube size-4" aria-hidden="true">
-                                <path
-                                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
-                                </path>
-                                <path d="m10 15 5-3-5-3z"></path>
-                            </svg></a>
-                    </div>
-                </div>
+      <div class="container-luxe">
+        <div class="footer-grid">
+          <!-- Logo -->
+          <div class="footer-col">
+            <div class="d-flex flex-column leading-none fade-up">
+              <span class="font-display">THE BAYA</span>
+              <span class="text-gold footer-logo-small-text">MANKHURD</span>
             </div>
-            <div class="hairline my-5 w-100" style="max-width: 100%;"></div>
-            <div class="d-flex flex-column text-center text-xs ">
-                <p class="mb-3">The Baya Mankhurd © Copyright 2020. All rights reserved.</p>
-                <p class="mx-auto max-w-3xl mb-0">MahaRERA Disclaimer: The Baya Mankhurd has been registered via
-                    MahaRERA registration number: P5XXXXXXXX and is available on the website <a
-                        href="https://maharera.mahaonline.gov.in" target="_blank" rel="noreferrer"
-                        class="text-gold footer-rera-anchor text-decoration-none">https://maharera.mahaonline.gov.in</a>
-                    under registered projects.</p>
+            <p class="footer-logo-about mt-3 mb-0 max-w-xs fade-up"> Luxury living reimagined — crafted by The Baya Company for the modern Mumbai family. </p>
+          </div>
+          <!-- Quick Links -->
+          <div class="footer-col">
+            <h5 class="mb-3 links-heading fade-up">Quick Links</h5>
+            <div class="hairline mb-3 fade-up" style="max-width: 48px;"></div>
+            <ul class="list-unstyled">
+              <li class="mb-2 fade-up">
+                <a href="#about" class="text-decoration-none ">Overview</a>
+              </li>
+              <li class="mb-2 fade-up">
+                <a href="#amenities" class="text-decoration-none ">Amenities</a>
+              </li>
+              <li class="mb-2 fade-up">
+                <a href="#gallery" class="text-decoration-none ">Gallery</a>
+              </li>
+              <li class="mb-2 fade-up">
+                <a href="#floor-plans" class="text-decoration-none ">Floor Plans</a>
+              </li>
+              <li class="mb-0 fade-up">
+                <a href="#location" class="text-decoration-none ">Location</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contact -->
+          <div class="footer-col">
+            <h5 class="mb-3 links-heading fade-up">Get in Touch</h5>
+            <div class="hairline mb-3 fade-up" style="max-width: 48px;"></div>
+            <ul class="list-unstyled">
+              <li class="mb-3 d-flex flex-row gap-2 fade-up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4 text-gold" aria-hidden="true">
+                  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                </svg>
+                <a href="tel:18003137171" class="text-decoration-none "> Toll Free: 1800 313 7171 </a>
+              </li>
+              <li class="d-flex flex-row gap-2 fade-up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4 text-gold" aria-hidden="true">
+                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                </svg>
+                <a href="mailto:sales@thebayacompany.com" class="text-decoration-none "> sales@thebayacompany.com </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Social -->
+          <div class="footer-col">
+            <h5 class="mb-3 links-heading fade-up">Follow Us</h5>
+            <div class="hairline mb-3 fade-up" style="max-width: 48px;"></div>
+            <div class="d-flex gap-2">
+              <a href="#" class="social-media-links text-gold d-flex align-items-center justify-content-center fade-up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook size-4" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-media-links text-gold d-flex align-items-center justify-content-center fade-up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram size-4" aria-hidden="true">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" class="social-media-links text-gold d-flex align-items-center justify-content-center fade-up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin size-4" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="#" class="social-media-links text-gold d-flex align-items-center justify-content-center fade-up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube size-4" aria-hidden="true">
+                  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+                  <path d="m10 15 5-3-5-3z"></path>
+                </svg>
+              </a>
             </div>
+          </div>
         </div>
+        <div class="hairline my-5 w-100" style="max-width: 100%;"></div>
+        <div class="d-flex flex-column text-center text-xs ">
+          <p class="mb-3">The Baya Mankhurd © Copyright 2020. All rights reserved.</p>
+          <p class="mx-auto max-w-3xl mb-0">MahaRERA Disclaimer: The Baya Mankhurd has been registered via MahaRERA registration number: P5XXXXXXXX and is available on the website <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noreferrer" class="text-gold footer-rera-anchor text-decoration-none">https://maharera.mahaonline.gov.in</a> under registered projects. </p>
+        </div>
+      </div>
     </footer>
 
 
-<!--Download Brochure form -->
-<div class="modal fade" id="DownloadBrochure" tabindex="-1" style="background-color: 
+    <!--Download Brochure form -->
+    <div class="modal fade" id="DownloadBrochure" tabindex="-1" style="background-color: 
 color-mix(in oklab, #000 80%, transparent);">
-    <div class="modal-dialog modal-dialog-centered modal-box-width">
+      <div class="modal-dialog modal-dialog-centered modal-box-width">
         <div class="modal-content glass-gold enquiry-modal">
-
-            <button type="button" class="btn-close-custom"
-                data-bs-dismiss="modal">
-                ✕
-            </button>
-
-            <div class="enquiry-modal-body">
-
-                <span class="eyebrow">The Baya — Mankhurd</span>
-
-                <h2 class="modal-title-custom font-display my-3">
-                   Download Brochure
-                </h2>
-
-                <p class="modal-desc">
-                    Share your details and our team will get in touch within 24 hours.
-                </p>
-
-                <form id="form-modal" class="form-modal-form mt-4">
-
-                    <!-- Name -->
-                    <div class="position-relative mb-3">
-<span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg"
-         width="20"
-         height="19"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-        <circle cx="12" cy="7" r="4"></circle>
-    </svg>
-</span>
-                        <input type="text"
-                            class="custom-input"
-                            placeholder="Full Name"
-                            required>
-                    </div>
-
-                    <!-- Phone -->
-                    <div class="position-relative mb-3">
-
-   <span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-</span>
-                        <input type="tel"
-                            class="form-control custom-input"
-                            placeholder="Phone Number"
-                            required>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="position-relative mb-4">
-
-   <span class="input-icon-form text-gold">
-   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-</span>
-                        <input type="email"
-                            class="form-control custom-input"
-                            placeholder="Email Address"
-                            required>
-                    </div>
-
-                    <button type="submit"
-                        class="btn btn-gold-modal w-100">
-                        Submit Enquiry
-                    </button>
-
-                </form>
-
-            </div>
-
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal"> ✕ </button>
+          <div class="enquiry-modal-body">
+            <span class="eyebrow">The Baya — Mankhurd</span>
+            <h2 class="modal-title-custom font-display my-3"> Download Brochure </h2>
+            <p class="modal-desc"> Share your details and our team will get in touch within 24 hours. </p>
+            <form id="form-modal" class="form-modal-form mt-4">
+              <!-- Name -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </span>
+                <input type="text" class="custom-input" placeholder="Full Name" required>
+              </div>
+              <!-- Phone -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true">
+                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                  </svg>
+                </span>
+                <input type="tel" class="form-control custom-input" placeholder="Phone Number" required>
+              </div>
+              <!-- Email -->
+              <div class="position-relative mb-4">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true">
+                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  </svg>
+                </span>
+                <input type="email" class="form-control custom-input" placeholder="Email Address" required>
+              </div>
+              <button type="submit" class="btn btn-gold-modal w-100"> Submit Enquiry </button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- Schedule a Site Visit form -->
-<div class="modal fade" id="SiteVisit" tabindex="-1" style="background-color: 
+    <!-- Schedule a Site Visit form -->
+    <div class="modal fade" id="SiteVisit" tabindex="-1" style="background-color: 
 color-mix(in oklab, #000 80%, transparent);">
-    <div class="modal-dialog modal-dialog-centered modal-box-width">
+      <div class="modal-dialog modal-dialog-centered modal-box-width">
         <div class="modal-content glass-gold enquiry-modal">
-
-            <button type="button" class="btn-close-custom"
-                data-bs-dismiss="modal">
-                ✕
-            </button>
-
-            <div class="enquiry-modal-body">
-
-                <span class="eyebrow">The Baya — Mankhurd</span>
-
-                <h2 class="modal-title-custom font-display my-3">
-                   Schedule a Site Visit
-                </h2>
-
-                <p class="modal-desc">
-                    Share your details and our team will get in touch within 24 hours.
-                </p>
-
-                <form id="form-modal" class="form-modal-form mt-4">
-
-                    <!-- Name -->
-                    <div class="position-relative mb-3">
-<span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg"
-         width="20"
-         height="19"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-        <circle cx="12" cy="7" r="4"></circle>
-    </svg>
-</span>
-                        <input type="text"
-                            class="custom-input"
-                            placeholder="Full Name"
-                            required>
-                    </div>
-
-                    <!-- Phone -->
-                    <div class="position-relative mb-3">
-
-   <span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-</span>
-                        <input type="tel"
-                            class="form-control custom-input"
-                            placeholder="Phone Number"
-                            required>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="position-relative mb-4">
-
-   <span class="input-icon-form text-gold">
-   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-</span>
-                        <input type="email"
-                            class="form-control custom-input"
-                            placeholder="Email Address"
-                            required>
-                    </div>
-
-                    <button type="submit"
-                        class="btn btn-gold-modal w-100">
-                        Submit Enquiry
-                    </button>
-
-                </form>
-
-            </div>
-
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal"> ✕ </button>
+          <div class="enquiry-modal-body">
+            <span class="eyebrow">The Baya — Mankhurd</span>
+            <h2 class="modal-title-custom font-display my-3"> Schedule a Site Visit </h2>
+            <p class="modal-desc"> Share your details and our team will get in touch within 24 hours. </p>
+            <form id="form-modal" class="form-modal-form mt-4">
+              <!-- Name -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </span>
+                <input type="text" class="custom-input" placeholder="Full Name" required>
+              </div>
+              <!-- Phone -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true">
+                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                  </svg>
+                </span>
+                <input type="tel" class="form-control custom-input" placeholder="Phone Number" required>
+              </div>
+              <!-- Email -->
+              <div class="position-relative mb-4">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true">
+                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  </svg>
+                </span>
+                <input type="email" class="form-control custom-input" placeholder="Email Address" required>
+              </div>
+              <button type="submit" class="btn btn-gold-modal w-100"> Submit Enquiry </button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- Schedule a Site Visit form -->
- <!--Floor-Plan-popup-form -->
-<!--Floor-Plan-3-BHK form -->
-<div class="modal fade" id="FloorPlan3BHK" tabindex="-1" style="background-color: 
+    <!-- Schedule a Site Visit form -->
+    <!--Floor-Plan-popup-form -->
+    <!--Floor-Plan-3-BHK form -->
+    <div class="modal fade" id="FloorPlan3BHK" tabindex="-1" style="background-color: 
 color-mix(in oklab, #000 80%, transparent);">
-    <div class="modal-dialog modal-dialog-centered modal-box-width">
+      <div class="modal-dialog modal-dialog-centered modal-box-width">
         <div class="modal-content glass-gold enquiry-modal">
-
-            <button type="button" class="btn-close-custom"
-                data-bs-dismiss="modal">
-                ✕
-            </button>
-
-            <div class="enquiry-modal-body">
-
-                <span class="eyebrow">The Baya — Mankhurd</span>
-
-                <h2 class="modal-title-custom font-display my-3">
-                    Floor Plan — 3 BHK
-                </h2>
-
-                <p class="modal-desc">
-                    Share your details and our team will get in touch within 24 hours.
-                </p>
-
-                <form id="form-modal" class="form-modal-form mt-4">
-
-                    <!-- Name -->
-                    <div class="position-relative mb-3">
-<span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg"
-         width="20"
-         height="19"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-        <circle cx="12" cy="7" r="4"></circle>
-    </svg>
-</span>
-                        <input type="text"
-                            class="custom-input"
-                            placeholder="Full Name"
-                            required>
-                    </div>
-
-                    <!-- Phone -->
-                    <div class="position-relative mb-3">
-
-   <span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-</span>
-                        <input type="tel"
-                            class="form-control custom-input"
-                            placeholder="Phone Number"
-                            required>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="position-relative mb-4">
-
-   <span class="input-icon-form text-gold">
-   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-</span>
-                        <input type="email"
-                            class="form-control custom-input"
-                            placeholder="Email Address"
-                            required>
-                    </div>
-
-                    <button type="submit"
-                        class="btn btn-gold-modal w-100">
-                        Submit Enquiry
-                    </button>
-
-                </form>
-
-            </div>
-
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal"> ✕ </button>
+          <div class="enquiry-modal-body">
+            <span class="eyebrow">The Baya — Mankhurd</span>
+            <h2 class="modal-title-custom font-display my-3"> Floor Plan — 3 BHK </h2>
+            <p class="modal-desc"> Share your details and our team will get in touch within 24 hours. </p>
+            <form id="form-modal" class="form-modal-form mt-4">
+              <!-- Name -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </span>
+                <input type="text" class="custom-input" placeholder="Full Name" required>
+              </div>
+              <!-- Phone -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true">
+                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                  </svg>
+                </span>
+                <input type="tel" class="form-control custom-input" placeholder="Phone Number" required>
+              </div>
+              <!-- Email -->
+              <div class="position-relative mb-4">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true">
+                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  </svg>
+                </span>
+                <input type="email" class="form-control custom-input" placeholder="Email Address" required>
+              </div>
+              <button type="submit" class="btn btn-gold-modal w-100"> Submit Enquiry </button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!--Floor-Plan-3-BHK form -->
-<!--Floor-Plan-3-plus-BHK from -->
-<div class="modal fade" id="FloorPlan3plusBHK" tabindex="-1" style="background-color: 
+    <!--Floor-Plan-3-BHK form -->
+    <!--Floor-Plan-3-plus-BHK from -->
+    <div class="modal fade" id="FloorPlan3plusBHK" tabindex="-1" style="background-color: 
 color-mix(in oklab, #000 80%, transparent);">
-    <div class="modal-dialog modal-dialog-centered modal-box-width">
+      <div class="modal-dialog modal-dialog-centered modal-box-width">
         <div class="modal-content glass-gold enquiry-modal">
-
-            <button type="button" class="btn-close-custom"
-                data-bs-dismiss="modal">
-                ✕
-            </button>
-
-            <div class="enquiry-modal-body">
-
-                <span class="eyebrow">The Baya — Mankhurd</span>
-
-                <h2 class="modal-title-custom font-display my-3">
-                    Floor Plan — 3+1 BHK
-                </h2>
-
-                <p class="modal-desc">
-                    Share your details and our team will get in touch within 24 hours.
-                </p>
-
-                <form id="form-modal" class="form-modal-form mt-4">
-
-                    <!-- Name -->
-                    <div class="position-relative mb-3">
-<span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg"
-         width="20"
-         height="19"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-        <circle cx="12" cy="7" r="4"></circle>
-    </svg>
-</span>
-                        <input type="text"
-                            class="custom-input"
-                            placeholder="Full Name"
-                            required>
-                    </div>
-
-                    <!-- Phone -->
-                    <div class="position-relative mb-3">
-
-   <span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-</span>
-                        <input type="tel"
-                            class="form-control custom-input"
-                            placeholder="Phone Number"
-                            required>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="position-relative mb-4">
-
-   <span class="input-icon-form text-gold">
-   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-</span>
-                        <input type="email"
-                            class="form-control custom-input"
-                            placeholder="Email Address"
-                            required>
-                    </div>
-
-                    <button type="submit"
-                        class="btn btn-gold-modal w-100">
-                        Submit Enquiry
-                    </button>
-
-                </form>
-
-            </div>
-
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal"> ✕ </button>
+          <div class="enquiry-modal-body">
+            <span class="eyebrow">The Baya — Mankhurd</span>
+            <h2 class="modal-title-custom font-display my-3"> Floor Plan — 3+1 BHK </h2>
+            <p class="modal-desc"> Share your details and our team will get in touch within 24 hours. </p>
+            <form id="form-modal" class="form-modal-form mt-4">
+              <!-- Name -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </span>
+                <input type="text" class="custom-input" placeholder="Full Name" required>
+              </div>
+              <!-- Phone -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true">
+                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                  </svg>
+                </span>
+                <input type="tel" class="form-control custom-input" placeholder="Phone Number" required>
+              </div>
+              <!-- Email -->
+              <div class="position-relative mb-4">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true">
+                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  </svg>
+                </span>
+                <input type="email" class="form-control custom-input" placeholder="Email Address" required>
+              </div>
+              <button type="submit" class="btn btn-gold-modal w-100"> Submit Enquiry </button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!--Floor-Plan-3-plus-BHK form -->
-<!--Floor-Plan-4-BHK form -->
-<div class="modal fade" id="FloorPlan4BHK" tabindex="-1" style="background-color: 
+    <!--Floor-Plan-3-plus-BHK form -->
+    <!--Floor-Plan-4-BHK form -->
+    <div class="modal fade" id="FloorPlan4BHK" tabindex="-1" style="background-color: 
 color-mix(in oklab, #000 80%, transparent);">
-    <div class="modal-dialog modal-dialog-centered modal-box-width">
+      <div class="modal-dialog modal-dialog-centered modal-box-width">
         <div class="modal-content glass-gold enquiry-modal">
-
-            <button type="button" class="btn-close-custom"
-                data-bs-dismiss="modal">
-                ✕
-            </button>
-
-            <div class="enquiry-modal-body">
-
-                <span class="eyebrow">The Baya — Mankhurd</span>
-
-                <h2 class="modal-title-custom font-display my-3">
-                    Floor Plan — 4 BHK
-                </h2>
-
-                <p class="modal-desc">
-                    Share your details and our team will get in touch within 24 hours.
-                </p>
-
-                <form id="form-modal" class="form-modal-form mt-4">
-
-                    <!-- Name -->
-                    <div class="position-relative mb-3">
-<span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg"
-         width="20"
-         height="19"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-        <circle cx="12" cy="7" r="4"></circle>
-    </svg>
-</span>
-                        <input type="text"
-                            class="custom-input"
-                            placeholder="Full Name"
-                            required>
-                    </div>
-
-                    <!-- Phone -->
-                    <div class="position-relative mb-3">
-
-   <span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-</span>
-                        <input type="tel"
-                            class="form-control custom-input"
-                            placeholder="Phone Number"
-                            required>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="position-relative mb-4">
-
-   <span class="input-icon-form text-gold">
-   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-</span>
-                        <input type="email"
-                            class="form-control custom-input"
-                            placeholder="Email Address"
-                            required>
-                    </div>
-
-                    <button type="submit"
-                        class="btn btn-gold-modal w-100">
-                        Submit Enquiry
-                    </button>
-
-                </form>
-
-            </div>
-
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal"> ✕ </button>
+          <div class="enquiry-modal-body">
+            <span class="eyebrow">The Baya — Mankhurd</span>
+            <h2 class="modal-title-custom font-display my-3"> Floor Plan — 4 BHK </h2>
+            <p class="modal-desc"> Share your details and our team will get in touch within 24 hours. </p>
+            <form id="form-modal" class="form-modal-form mt-4">
+              <!-- Name -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </span>
+                <input type="text" class="custom-input" placeholder="Full Name" required>
+              </div>
+              <!-- Phone -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true">
+                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                  </svg>
+                </span>
+                <input type="tel" class="form-control custom-input" placeholder="Phone Number" required>
+              </div>
+              <!-- Email -->
+              <div class="position-relative mb-4">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true">
+                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  </svg>
+                </span>
+                <input type="email" class="form-control custom-input" placeholder="Email Address" required>
+              </div>
+              <button type="submit" class="btn btn-gold-modal w-100"> Submit Enquiry </button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!--Floor-Plan-4--BHK form -->
-<!--Floor-Plan-4-plus-BHK form -->
-<div class="modal fade" id="FloorPlan4plusBHK" tabindex="-1" style="background-color: 
+    <!--Floor-Plan-4--BHK form -->
+    <!--Floor-Plan-4-plus-BHK form -->
+    <div class="modal fade" id="FloorPlan4plusBHK" tabindex="-1" style="background-color: 
 color-mix(in oklab, #000 80%, transparent);">
-    <div class="modal-dialog modal-dialog-centered modal-box-width">
+      <div class="modal-dialog modal-dialog-centered modal-box-width">
         <div class="modal-content glass-gold enquiry-modal">
-
-            <button type="button" class="btn-close-custom"
-                data-bs-dismiss="modal">
-                ✕
-            </button>
-
-            <div class="enquiry-modal-body">
-
-                <span class="eyebrow">The Baya — Mankhurd</span>
-
-                <h2 class="modal-title-custom font-display my-3">
-                    Floor Plan — 4+1 BHK
-
-                </h2>
-
-                <p class="modal-desc">
-                    Share your details and our team will get in touch within 24 hours.
-                </p>
-
-                <form id="form-modal" class="form-modal-form mt-4">
-
-                    <!-- Name -->
-                    <div class="position-relative mb-3">
-<span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg"
-         width="20"
-         height="19"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-        <circle cx="12" cy="7" r="4"></circle>
-    </svg>
-</span>
-                        <input type="text"
-                            class="custom-input"
-                            placeholder="Full Name"
-                            required>
-                    </div>
-
-                    <!-- Phone -->
-                    <div class="position-relative mb-3">
-
-   <span class="input-icon-form text-gold">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-</span>
-                        <input type="tel"
-                            class="form-control custom-input"
-                            placeholder="Phone Number"
-                            required>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="position-relative mb-4">
-
-   <span class="input-icon-form text-gold">
-   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-</span>
-                        <input type="email"
-                            class="form-control custom-input"
-                            placeholder="Email Address"
-                            required>
-                    </div>
-
-                    <button type="submit"
-                        class="btn btn-gold-modal w-100">
-                        Submit Enquiry
-                    </button>
-
-                </form>
-
-            </div>
-
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal"> ✕ </button>
+          <div class="enquiry-modal-body">
+            <span class="eyebrow">The Baya — Mankhurd</span>
+            <h2 class="modal-title-custom font-display my-3"> Floor Plan — 4+1 BHK </h2>
+            <p class="modal-desc"> Share your details and our team will get in touch within 24 hours. </p>
+            <form id="form-modal" class="form-modal-form mt-4">
+              <!-- Name -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </span>
+                <input type="text" class="custom-input" placeholder="Full Name" required>
+              </div>
+              <!-- Phone -->
+              <div class="position-relative mb-3">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-4" aria-hidden="true">
+                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                  </svg>
+                </span>
+                <input type="tel" class="form-control custom-input" placeholder="Phone Number" required>
+              </div>
+              <!-- Email -->
+              <div class="position-relative mb-4">
+                <span class="input-icon-form text-gold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true">
+                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  </svg>
+                </span>
+                <input type="email" class="form-control custom-input" placeholder="Email Address" required>
+              </div>
+              <button type="submit" class="btn btn-gold-modal w-100"> Submit Enquiry </button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!--Floor-Plan-4-plus-BHK form -->
-<!--Floor-Plan-popup-form -->
-
-
-
-<!-- mobile-action-bar -->
+    <!--Floor-Plan-4-plus-BHK form -->
+    <!--Floor-Plan-popup-form -->
+    <!-- mobile-action-bar -->
     <div class="mobile-action-bar  d-lg-none">
-
-        <button class="action-item" data-bs-toggle="modal" data-bs-target="#SiteVisit">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-calendar-check size-5 text-gold" aria-hidden="true">
-                <path d="M8 2v4"></path>
-                <path d="M16 2v4"></path>
-                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                <path d="M3 10h18"></path>
-                <path d="m9 16 2 2 4-4"></path>
-            </svg>
-            <span>Site Visit</span>
-        </button>
-
-        <button class="action-item border-btn" data-bs-toggle="modal" data-bs-target="#DownloadBrochure">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-file-down size-5 text-gold" aria-hidden="true">
-                <path
-                    d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z">
-                </path>
-                <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
-                <path d="M12 18v-6"></path>
-                <path d="m9 15 3 3 3-3"></path>
-            </svg>
-            <span>Brochure</span>
-        </button>
-
-        <a href="tel:18003137171" class="action-item text-decoration-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-phone size-5 text-gold" aria-hidden="true">
-                <path
-                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-                </path>
-            </svg>
-            <span>Call Now</span>
-        </a>
-
+      <button class="action-item" data-bs-toggle="modal" data-bs-target="#SiteVisit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-check size-5 text-gold" aria-hidden="true">
+          <path d="M8 2v4"></path>
+          <path d="M16 2v4"></path>
+          <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+          <path d="M3 10h18"></path>
+          <path d="m9 16 2 2 4-4"></path>
+        </svg>
+        <span>Site Visit</span>
+      </button>
+      <button class="action-item border-btn" data-bs-toggle="modal" data-bs-target="#DownloadBrochure">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-down size-5 text-gold" aria-hidden="true">
+          <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
+          <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+          <path d="M12 18v-6"></path>
+          <path d="m9 15 3 3 3-3"></path>
+        </svg>
+        <span>Brochure</span>
+      </button>
+      <a href="tel:18003137171" class="action-item text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone size-5 text-gold" aria-hidden="true">
+          <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+        </svg>
+        <span>Call Now</span>
+      </a>
     </div>
     <!-- mobile-action-bar -->
-<!-- gallery modal -->
+    <!-- gallery modal -->
     <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen modal-dialog-centered m-0">
-            <div class="modal-content custom-modal-bg border-0 position-relative">
-                <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close"> &#x2715;
-                </button>
-                <div
-                    class="modal-body d-flex flex-column align-items-center justify-content-center position-relative p-0">
-                    <button class="gallery-arrow prev-btn" onclick="prevImage()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left size-10" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
-                    <div class="popup-image-wrapper"> <img id="popupImage" class="img-fluid" alt="Gallery Popup"> </div>
-                    <button class="gallery-arrow next-btn" onclick="nextImage()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right size-10" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>  </button>
-                    <div id="popupCaption" class="modal-image-caption mt-3 text-center"> Exterior Renders </div>
-                </div>
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered m-0">
+        <div class="modal-content custom-modal-bg border-0 position-relative">
+          <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close"> &#x2715; </button>
+          <div class="modal-body d-flex flex-column align-items-center justify-content-center position-relative p-0">
+            <button class="gallery-arrow prev-btn" onclick="prevImage()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left size-10" aria-hidden="true">
+                <path d="m15 18-6-6 6-6"></path>
+              </svg>
+            </button>
+            <div class="popup-image-wrapper">
+              <img id="popupImage" class="img-fluid" alt="Gallery Popup">
             </div>
+            <button class="gallery-arrow next-btn" onclick="nextImage()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right size-10" aria-hidden="true">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </button>
+            <div id="popupCaption" class="modal-image-caption mt-3 text-center"> Exterior Renders </div>
+          </div>
         </div>
+      </div>
     </div>
-
-<!-- gallery modal -->
-
- <!-- floor-plans-section modal -->
+    <!-- gallery modal -->
+    <!-- floor-plans-section modal -->
     <div class="modal fade floorplan-modal" id="floorplanModal" tabindex="-1">
-
-    <button type="button"
-            class="btn-close-custom-2"
-            data-bs-dismiss="modal">
-        ✕
-    </button>
-
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-
+      <button type="button" class="btn-close-custom-2" data-bs-dismiss="modal"> ✕ </button>
+      <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content bg-transparent border-0">
-
-            <div class="modal-body text-center p-0">
-
-                <img id="popupFloorplan"
-                     src=""
-                     class="img-fluid floorplan-popup-img">
-
-                <div class="mt-4">
-                    <h3 id="popupTitle" class="text-gradient-gold fs-3">
-                        3+1 BHK
-                    </h3>
-
-                    <p id="popupSize" class="text-muted-foreground small mb-0">
-                        Approx. 1,520 sq.ft.
-                    </p>
-                </div>
-
+          <div class="modal-body text-center p-0">
+            <img id="popupFloorplan" src="" class="img-fluid floorplan-popup-img">
+            <div class="mt-4">
+              <h3 id="popupTitle" class="text-gradient-gold fs-3"> 3+1 BHK </h3>
+              <p id="popupSize" class="text-muted-foreground small mb-0"> Approx. 1,520 sq.ft. </p>
             </div>
-
+          </div>
         </div>
-
+      </div>
     </div>
-
-</div>
-<!-- floor-plans-section modal -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-   
+    <!-- floor-plans-section modal -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/custom-script.js"></script>
-</body>
-
+  </body>
 </html>

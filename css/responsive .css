@@ -1,126 +1,138 @@
-
 @media (min-width: 992px) {
- .mobile-action-bar {
-        display: none;
-    }
+  .mobile-action-bar {
+    display: none;
+  }
 }
 @media (max-width: 992px) {
-#mainNav {
+  #mainNav {
     background: var(--gradient-glass);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid oklch(100% 0 0 / .1);
+    border: 1px solid oklch(100% 0 0 / 0.1);
     width: 100%;
     padding: 24px 36px;
     border-radius: 10px;
     margin-top: 19px;
-}
-#mainNav .navbar-nav {
+  }
+  #mainNav .navbar-nav {
     gap: 5px;
-}
-#mainNav  .header-btn{
+  }
+  #mainNav .header-btn {
     width: 100%;
-    margin-top:15px;
-}
-    .hero-title{
-        font-size: 4.5rem;
-    }
-    .h2-font{
+    margin-top: 15px;
+  }
+  .hero-title {
+    font-size: 4.5rem;
+  }
+  .h2-font {
     font-size: 3.75rem;
-}
-.gap-12 {
+  }
+  .gap-12 {
     gap: calc(var(--spacing) * 12);
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .custome-flex {
+    flex-direction: column;
+  }
+
+  .custome-flex-col {
+    width: 100%;
+  }
 }
- .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
-    .custome-flex {
-        flex-direction: column;
-    }
-
-    .custome-flex-col {
-        width: 100%;
-    }
-}
-
-
 
 @media (min-width: 769px) {
-    
-    .item-building {
-        grid-column: span 2;
-        grid-row: span 2;
-    }
-  
-    .item-lobby { grid-column: span 1; grid-row: span 1; }
-    .item-living { grid-column: span 1; grid-row: span 1; }
-    
-    
-    .item-pool { grid-column: span 2; grid-row: span 1.5; }
-    
-    
-    .item-bedroom { grid-column: span 1; grid-row: span 2; }
-    .item-lounge { grid-column: span 1; grid-row: span 1; }
-    .item-garden { grid-column: span 2; grid-row: span 1.5; }
+  .item-building {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .item-lobby {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .item-living {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .item-pool {
+    grid-column: span 2;
+    grid-row: span 1.5;
+  }
+
+  .item-bedroom {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .item-lounge {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .item-garden {
+    grid-column: span 2;
+    grid-row: span 1.5;
+  }
 }
 @media (max-width: 768px) {
-
- .hero-title{
-        font-size:3rem;
-    }
-    .hero-title .d-inline-block {
-    display: inline;
-}
-.h2-font{
-    font-size: 2.25rem;
-}
-.glass .counter-text {
+  .hero-title {
     font-size: 3rem;
-}
-.glass-gold .glass-gold-bhk {
-    font-size: 1.5rem;
-
-}
-.custom-gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 200px;
-    } 
-    .h3-font {
+  }
+  .hero-title .d-inline-block {
+    display: inline;
+  }
+  .h2-font {
     font-size: 2.25rem;
-}
- .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
+  }
+  .glass .counter-text {
+    font-size: 3rem;
+  }
+  .glass-gold .glass-gold-bhk {
+    font-size: 1.5rem;
+  }
+  .custom-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
+  .h3-font {
+    font-size: 2.25rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
 }
 
 @media (max-width: 576px) {
-   body{  
-    font-size: 16px;    
-}
-   .hero-description {
-       font-size: 16px;
-}
-    .gallery-arrow {
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-    .prev-btn { left: 1%; }
-    .next-btn { right: 1%; }
-    .modal-image-caption { font-size: 1rem; }
+  body {
+    font-size: 16px;
+  }
+  .hero-description {
+    font-size: 16px;
+  }
+  .gallery-arrow {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .prev-btn {
+    left: 1%;
+  }
+  .next-btn {
+    right: 1%;
+  }
+  .modal-image-caption {
+    font-size: 1rem;
+  }
 
-    .custom-gallery-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 250px;
-    }
-    .btn {
-    
+  .custom-gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 250px;
+  }
+  .btn {
     padding: 14.6px 25px;
-   
-}
-.header-btn {
-  
+  }
+  .header-btn {
     line-height: 0.2rem;
-    
-}
+  }
 }
