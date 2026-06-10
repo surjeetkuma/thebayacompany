@@ -486,6 +486,7 @@ h6 {
 .amenities-top-content .border-hr {
   height: 1px;
   background: #312d28;
+  width: 100%;
 }
 
 .card-box-amenities {
