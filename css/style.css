@@ -1,31 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 :root {
+  --white: #ffffff;
   --font-sans: "Jost", sans-serif;
-  --gold: oklch(78% 0.12 78);
-  --background: oklch(16% 0.006 60);
-  --foreground: oklch(97% 0.004 80);
-  --muted-foreground: oklch(70% 0.012 70);
-  --gold-foreground: oklch(16% 0.006 60);
-  --charcoal: oklch(13% 0.006 60);
-  --gold-foreground: oklch(16% 0.006 60);
+
+  /* Brand Colors */
+  --gold: #3aaa35;
+  --gold-light: #52b748;
+  --gold-dark: #408e37;
+
+  --gold-foreground: #ffffff;
+  --charcoal: #1f2d1f;
+
+  /* Base */
+  --background: #ffffff;
+  --foreground: #ffffff;
+  --muted-foreground: #4b5563;
+
   --color-background: var(--background);
+
+  /* Premium Green Gradient */
   --gradient-gold: linear-gradient(
-    120deg,
-    oklch(70% 0.11 70),
-    oklch(88% 0.1 88)
+    135deg,
+    #52b748 0%,
+    #3aaa35 45%,
+    #408e37 100%
   );
+
+  /* Hero Overlay */
   --gradient-hero: linear-gradient(
     180deg,
-    oklch(10% 0.005 60 / 0.2) 0%,
-    oklch(10% 0.005 60 / 0.55) 55%,
-    oklch(13% 0.006 60) 100%
+    rgba(64, 142, 55, 0.15) 0%,
+    rgba(64, 142, 55, 0.45) 55%,
+    rgba(31, 45, 31, 0.9) 100%
   );
+
+  /* Glass Effect */
   --gradient-glass: linear-gradient(
     135deg,
-    oklch(100% 0 0 / 0.08),
-    oklch(100% 0 0 / 0.02)
+    rgba(255, 255, 255, 0.92),
+    rgba(82, 183, 72, 0.08)
   );
-  --shadow-gold: 0 20px 60px -20px oklch(78% 0.12 78 / 0.45);
+
+  /* Shadows */
+  --shadow-gold:
+    0 20px 60px -20px rgba(58, 170, 53, 0.28);
+
+  --glow-gold:
+    0 0 0 1px rgba(82, 183, 72, 0.2),
+    0 0 35px rgba(58, 170, 53, 0.2);
+
+  --border: rgba(58, 170, 53, 0.12);
+  --card: #ffffff;
+
+  /* Layout */
   --container-xs: 20rem;
   --container-sm: 24rem;
   --container-md: 28rem;
@@ -33,11 +60,11 @@
   --container-2xl: 42rem;
   --container-3xl: 48rem;
   --container-4xl: 56rem;
+
   --spacing: 0.25rem;
-  --border: oklch(30% 0.01 70);
-  --glow-gold: 0 0 0 1px oklch(78% 0.12 78 / 0.25),
-    0 0 40px oklch(78% 0.12 78 / 0.25);
-  --card: oklch(20% 0.007 60);
+
+  /* Typography */
+  --heading-color: #1f2d1f;
 }
 
 .container {
@@ -86,7 +113,7 @@
   font-size: 3rem;
   line-height: 1.2;
   text-wrap: balance;
-  color: var(--foreground);
+  color: var(--heading-color);
   font-family: Cormorant Garamond, serif;
 }
 button:focus,
@@ -113,7 +140,7 @@ h4,
 h5,
 h6 {
   font-family: Cormorant Garamond, serif;
-  color: var(--foreground);
+  color: var(--heading-color);
   font-weight: 500;
 }
 .container-luxe {
@@ -149,7 +176,7 @@ h6 {
 }
 .btn-outline-gold {
   background-color: var(--charcoal);
-  color: var(--gold);
+  color: var(--white);
   border-color: color-mix(in oklab, var(--gold) 60%, transparent);
 }
 .btn-outline-gold:hover {
@@ -232,6 +259,7 @@ h6 {
   color: #ffffff;
 }
 
+
 .navbar-nav .nav-item .nav-link {
   color: color-mix(in oklab, var(--foreground) 85%, transparent);
   font-weight: 500;
@@ -279,11 +307,12 @@ h6 {
 
 #mainHeader.scrolled {
   padding: 0;
-  background: var(--gradient-glass);
-  -webkit-backdrop-filter: blur(0px);
-  backdrop-filter: blur(0px);
+  background:#2e7d3273;
+  -webkit-backdrop-filter: blur(120px);
+  backdrop-filter: blur(120px);
   border: 1px solid oklch(100% 0 0 / 0.1);
   box-shadow: 0 30px 80px -30px oklch(0% 0 0 / 0.7);
+  
 }
 
 .hero-image {
@@ -319,7 +348,7 @@ h6 {
   position: absolute;
   width: 4px;
   height: 4px;
-  background: #d4af37;
+  background: #4caf50;
   border-radius: 50%;
   opacity: 0.7;
   animation: float 8s linear infinite;
@@ -387,7 +416,7 @@ h6 {
 .h2-font {
   font-size: 3.75rem;
   line-height: 1;
-  color: var(--foreground);
+  color: var(--heading-color);
   font-weight: 500;
   font-family: "Cormorant Garamond";
   text-wrap: balance;
@@ -401,6 +430,7 @@ h6 {
   border-radius: 1rem;
   transition: transform 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
 }
+
 
 .glass:hover {
   transform: translateY(-5px);
@@ -421,7 +451,7 @@ h6 {
 .glass-gold {
   background: var(--gradient-glass);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid oklch(78% 0.12 78/0.3);
+  border: 1px solid #52b748;
   border-radius: 1rem;
 }
 
@@ -438,14 +468,14 @@ h6 {
   font-family: Cormorant Garamond, serif;
   font-size: 1.875rem;
   line-height: 1;
-  color: var(--foreground);
+  color: var(--heading-color);
 }
 /************************************ glass css code*********************************** */
 
 /************************************* World-Class Amenities *************************************/
 
 .amenities-top-content .card-top-right-text {
-  color: var(--foreground);
+  color: var(--heading-color);
   font-size: 1.5rem;
   line-height: 1;
   font-family: "Cormorant Garamond";
@@ -478,7 +508,7 @@ h6 {
 .glass-gold {
   background: var(--gradient-glass);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid oklch(78% 0.12 78 / 0.3);
+  border: 1px solid #52b748;
   padding: 16px 24px;
 }
 
@@ -509,11 +539,12 @@ h6 {
   bottom: -18px;
   right: -18px;
   z-index: 11;
+  background: #ffffffcf;
 }
 
 .about-year-box .Years-box {
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.4;
   font-family: Cormorant Garamond, serif;
 }
 
@@ -735,16 +766,15 @@ h6 {
 }
 
 #instant-access form input {
-  font-size: 0.875rem;
-  line-height: 1.2;
-  color: var(--foreground);
-  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
-    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  background-color: color-mix(in oklab, var(--background) 40%, transparent);
-  border-color: color-mix(in oklab, var(--border) 60%, transparent);
-  padding-block: calc(var(--spacing) * 1);
-  padding-inline: calc(var(--spacing) * 3);
-  height: calc(var(--spacing) * 12);
+    font-size: 0.875rem;
+    line-height: 1.2;
+    color: var(--heading-color);
+    box-shadow: 0 0 2px 0px #3aaa35;
+    border-color: #3aaa3566;
+    padding-block: calc(var(--spacing) * 1);
+    padding-inline: calc(var(--spacing) * 3);
+    height: calc(var(--spacing) * 12);
+    background: transparent;
 }
 
 #instant-access form input::placeholder {
@@ -764,6 +794,7 @@ h6 {
   border-radius: 15px;
   left: calc(var(--spacing) * 4);
   bottom: calc(var(--spacing) * 4);
+  background: #457d4840;
 }
 
 .map-loction-text span {
@@ -790,7 +821,7 @@ h6 {
   font-size: 20px;
   line-height: 1;
   font-family: Cormorant Garamond, serif;
-  color: var(--foreground);
+  color: var(--heading-color);
 }
 
 .loction-right-box p {
@@ -807,7 +838,7 @@ h6 {
 }
 .hidden-button button {
   color: var(--gold);
-  background-color: var(--charcoal);
+  background-color:var(--foreground);
   border-color: color-mix(in oklab, var(--gold) 60%, transparent);
   height: calc(var(--spacing) * 9);
   width: calc(var(--spacing) * 9);
@@ -855,7 +886,7 @@ h6 {
   line-height: 1;
   font-weight: 600;
   padding-inline: calc(var(--spacing) * 3);
-  background-color: var(--charcoal);
+  background-color: var(--white);
   border-color: color-mix(in oklab, var(--gold) 60%, transparent);
   border-style: solid;
   border-width: 1px;
@@ -872,7 +903,7 @@ h6 {
   filter: brightness(110%);
 }
 .floorplan-modal {
-  background-color: var(--charcoal);
+  background-color:rgba(10, 10, 10, 0.95) ;
 }
 
 .floorplan-modal .modal-dialog {
@@ -927,7 +958,7 @@ h6 {
 }
 
 .font-display {
-  color: var(--foreground);
+  color: var(--white);
   font-size: 1.875rem;
   font-weight: 600;
   font-family: Cormorant Garamond, serif;
@@ -997,7 +1028,7 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  background: var(--gradient-glass);
+  background:  #2e7d323d;
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid color-mix(in oklab, var(--gold) 15%, transparent);
 }
@@ -1037,7 +1068,9 @@ h6 {
   background-color: color-mix(in oklab, var(--card) 95%, transparent);
   padding: 24px;
 }
-
+.modal-dialog .enquiry-modal .modal-title-custom {
+    color: var(--heading-color);
+}
 .enquiry-modal .modal-desc {
   margin-bottom: 25px;
   font-size: 0.875rem;
@@ -1050,9 +1083,9 @@ h6 {
   transform: translate(10px, 10px);
 }
 .enquiry-modal .form-modal-form .custom-input {
-  color: #fff;
+  color:var(--heading-color);
   background-color: color-mix(in oklab, var(--background) 40%, transparent);
-  border-color: color-mix(in oklab, var(--border) 60%, transparent);
+  border-color: #3aaa3566;
   border-style: solid;
   border-width: 1px;
   width: 100%;
@@ -1080,7 +1113,7 @@ h6 {
   top: 15px;
   border: none;
   background: none;
-  color: var(--foreground);
+  color: var(--gold);
   font-size: 12px;
   cursor: pointer;
   z-index: 10;
@@ -1094,4 +1127,37 @@ h6 {
   text-transform: capitalize;
   color: var(--gold-foreground);
   font-weight: 600;
+}
+
+
+/* ===== White + Green + Dark Green Theme Overrides ===== */
+
+.glass {
+  background: rgba(255,255,255,.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(58,170,53,.08);
+  box-shadow: 0 10px 40px rgba(58,170,53,.08);
+} 
+.card-box-amenities:hover{
+  background:#f3fbf3;
+}
+
+#instant-access form input:focus-visible{
+  border:1px solid #2e7d32;
+}
+
+.footer-section{
+  background:#0b3b1d;
+}
+
+.footer-section,
+.footer-section h1,
+.footer-section h2,
+.footer-section h3,
+.footer-section h4,
+.footer-section h5,
+.footer-section h6,
+.footer-section p,
+.footer-section a{
+  color:#fff;
 }
