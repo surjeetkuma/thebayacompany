@@ -103,6 +103,9 @@
     grid-template-columns: 1fr;
     gap: 35px;
   }
+   .about-year-box {
+    right: -13px;
+}
 }
 
 @media (max-width: 576px) {
