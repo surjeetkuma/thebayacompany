@@ -1063,6 +1063,7 @@ h6 {
 /********************* tab footer modal css ***********/
 .modal-box-width {
   max-width: var(--container-md);
+  padding: 0 12px;
 }
 .enquiry-modal {
   background-color: color-mix(in oklab, var(--card) 95%, transparent);
