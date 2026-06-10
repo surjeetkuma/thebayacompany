@@ -509,7 +509,7 @@ h6 {
 }
 
 .card-box-amenities {
-  background-color: color-mix(in oklab, var(--background) 30%, transparent);
+  background-color:#3aaa3514;
   padding: 12px;
   border-radius: 10px;
   transition: background-color 0.4s ease,
@@ -517,7 +517,7 @@ h6 {
 }
 
 .card-box-amenities:hover {
-  background-color: color-mix(in oklab, var(--gold) 10%, transparent);
+  background-color: #cef1ce;
 }
 
 .card-box-amenities .small-text {
@@ -1159,9 +1159,6 @@ h6 {
   border: 1px solid rgba(58,170,53,.08);
   box-shadow: 0 10px 40px rgba(58,170,53,.08);
 } 
-.card-box-amenities:hover{
-  background:#f3fbf3;
-}
 
 #instant-access form input:focus-visible{
   border:1px solid #2e7d32;
