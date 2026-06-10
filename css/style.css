@@ -97,6 +97,7 @@
 .section-pad {
   padding-top: clamp(4.5rem, 9vw, 9rem);
   padding-bottom: clamp(4.5rem, 9vw, 9rem);
+  overflow: hidden;
 }
 
 .text-gold {

@@ -29,6 +29,7 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
