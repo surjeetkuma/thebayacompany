@@ -286,7 +286,9 @@ h6 {
   font-size: 0.875rem;
   line-height: 1;
 }
-
+.banner-setion-height {
+    min-height: 640px;
+}
 .hero-description {
   color: color-mix(in oklab, var(--foreground) 90%, transparent);
   font-size: 1.125rem;

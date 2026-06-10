@@ -41,6 +41,9 @@
   .custome-flex-col {
     width: 100%;
   }
+  .reveal-section img{
+   aspect-ratio: 1 !important;
+  }
 }
 
 @media (min-width: 769px) {
