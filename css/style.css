@@ -262,18 +262,6 @@ h6 {
   background-clip: text;
 }
 
-.logo .logo-text {
-  color: var(--foreground);
-  font-size: 1.5rem;
-  font-family: Cormorant Garamond, serif;
-  font-weight: 600;
-  line-height: 1.3;
-}
-
-.logo .logo-text-small {
-  letter-spacing: 0.4em;
-  font-size: 0.6rem;
-}
 
 #mainHeader .navbar-toggler {
   color: #ffffff;
@@ -998,11 +986,7 @@ h6 {
   grid-template-columns: repeat(4, 1fr);
   gap: calc(var(--spacing) * 12);
 }
-.footer-logo-small-text {
-  letter-spacing: 0.4em;
-  font-size: 0.65rem;
-  line-height: 1.6;
-}
+
 .footer-logo-about {
   font-size: 0.875rem;
   line-height: 1.4;
